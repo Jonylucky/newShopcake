@@ -102,68 +102,75 @@
             </div>
         </div>
     </div>
-    <!-- our Shop -->
+
 </div>
 <!-- our category  -->
-<div class="container">
-    <div class="head-bg">
-        <h2 class="bd-ourShop__head
-        ">Our Shop</h2>
-        <div class="container-category">
-            <div class="head">
-                <h1> Our <span class="span-text"> Category</span></h1>
-                <a class="view-all" ng-click="saveType()">View All >></a>
+<div class="head-bg">
+    <h2 class="bd-ourShop__head
+    ">Our Shop</h2>
+</div>
+<div class="container-category">
+    <div class="container ">
+        <div class="head">
+            <h1> Our <span class="span-text"> Category</span></h1>
+            <a class="view-all" ng-click="saveType()">View All >></a>
+        </div>
+        <div class="category-content">
+            <div class="box-category wd-five col-thir s-col-full">
+                <div class="img-cat" style="background-image: url('./images/cat-1.jpg');
+                    height: 214px;">
+
+                </div>
+                <h3>Fresh Cupcake</h3>
             </div>
-            <div class="category-content">
-                <div class="box-category wd-five col-thir s-col-full">
-                    <div class="img-cat" style="background-image: url('./images/cat-1.jpg');
+            <div class="box-category wd-five col-thir s-col-full">
+                <div class="img-cat" style="background-image: url('./images/cat-2.jpg');
                     height: 214px;">
 
-                    </div>
-                    <h3>Fresh Cupcake</h3>
                 </div>
-                <div class="box-category wd-five col-thir s-col-full">
-                    <div class="img-cat" style="background-image: url('./images/cat-2.jpg');
+                <h3>Fresh Cupcake</h3>
+            </div>
+            <div class="box-category wd-five col-thir s-col-full">
+                <div class="img-cat" style="background-image: url('./images/cat-3.jpg');
                     height: 214px;">
 
-                    </div>
-                    <h3>Fresh Cupcake</h3>
                 </div>
-                <div class="box-category wd-five col-thir s-col-full">
-                    <div class="img-cat" style="background-image: url('./images/cat-3.jpg');
+                <h3>Fresh Cupcake</h3>
+            </div>
+            <div class="box-category wd-five col-thir s-col-full">
+                <div class="img-cat" style="background-image: url('./images/cat-4.jpg');
                     height: 214px;">
 
-                    </div>
-                    <h3>Fresh Cupcake</h3>
                 </div>
-                <div class="box-category wd-five col-thir s-col-full">
-                    <div class="img-cat" style="background-image: url('./images/cat-4.jpg');
+                <h3>Fresh Cupcake</h3>
+            </div>
+            <div class="box-category wd-five col-thir s-col-full">
+                <div class="img-cat" style="background-image: url('./images/cat-5.jpg');
                     height: 214px;">
 
-                    </div>
-                    <h3>Fresh Cupcake</h3>
                 </div>
-                <div class="box-category wd-five col-thir s-col-full">
-                    <div class="img-cat" style="background-image: url('./images/cat-5.jpg');
-                    height: 214px;">
-
-                    </div>
-                    <h3>Fresh Cupcake</h3>
-                </div>
+                <h3>Fresh Cupcake</h3>
             </div>
         </div>
+
     </div>
 
-    <!-- our products -->
-    <div class="container">
-        <div class="container-product">
-            <div class="head">
-                <h1> Our<span class="span-text"> Products</span> </h1>
-                <a class="view-all" href="#!/shop">View All >></a>
-            </div>
-            <div class="product-content">
-                <div class=" box-product wd-for col-thir s-col-full"
-                    ng-repeat=" item in dataProduct | filter:{'type':'Anniversary'} ">
+</div>
+<div class="head-bg">
+    <h2 class="bd-ourShop__head
+    ">Our Product</h2>
+</div>
+<div class="container">
+    <div class="head">
+        <h1> Our <span class="span-text"> Product</span> </h1>
+        <a class="view-all" href="#!shop">View All >></a>
+    </div>
+    <div class="container-product">
+        <div class="product-content">
+            <div class=" wd-for col-thir s-col-full" ng-repeat=" item in dataProduct | filter:{'type':'Anniversary'} ">
+
+                <div class=" box-product">
+
                     <div class=" product-icon">
                         <div class="box-icon">
                             <a href="" class="icon-link"> <i class="fa-solid fa-heart "></i></a>
@@ -175,7 +182,7 @@
                     <ol class="box-list">
                         <li class="box-item">
                             <div class="box-item__img" style="background-image: url('{{item.image}}');
-                    height: 214px;">
+                        height: 214px;">
                         </li>
                         <li class="box-item">
                             <h3>{{item.name}}</h3>
@@ -196,170 +203,170 @@
                         </li>
                     </ol>
                 </div>
-
             </div>
+
         </div>
     </div>
-    <!-- About us -->
-    <div class="container">
-        <div class="head-bg">
-            <h2 class="bd-ourShop__head
-        ">About Us</h2>
-        </div>
-        <div class="about">
+</div>
+<!-- About us -->
+<div class="head-bg">
+    <h2 class="bd-ourShop__head
+    ">About Us</h2>
+</div>
+<div class="container">
+    <div class="about">
 
-            <div class="about-img wd-haft s-col-full">
-            </div>
-            <div class="about-conten wd-haft s-col-full">
-                <span>welcome to our products</span>
-                <h3>Cake-A-Licious products</h3>
-                <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor
-                    incididunt ut labore et dolore farhan aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit
-                    in voluptate </p>
-                <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor
-                    farhan aliqua. Ut enim ad minim veniam, quis</p>
-                <a href="#" class="btn">read more</a>
-            </div>
+        <div class="about-img wd-haft s-col-full">
+        </div>
+        <div class="about-conten wd-haft s-col-full">
+            <span>welcome to our products</span>
+            <h3>Cake-A-Licious products</h3>
+            <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore farhan aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit
+                in voluptate </p>
+            <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                farhan aliqua. Ut enim ad minim veniam, quis</p>
+            <a href="#" class="btn">read more</a>
         </div>
     </div>
+</div>
 
-    <!-- our gallsery -->
-    <div class="container">
-        <div class="container-gallery">
-            <div class="head">
-                <h1> Our <span class="span-text"> Gallsery</span> </h1>
-                <a class="view-all" ng-click="saveType('gallsery')" href="#!shop">View All >></a>
-            </div>
-            <div class="gallsery-conten">
-                <div class=" wd-thir mg-small s-col-full"
-                    ng-repeat="item in  dataProduct | filter :{'type':'gallsery'}">
-                    <div class="gallsery-box">
-                        <div class="gallsery-box__icon">
-                            <a href="" class="box__icon-link"> <i class="fa-solid fa-heart "></i></a>
-                            <a href="" class="box__icon-link"> <i class="fa-solid fa-cart-shopping "></i></a>
-                            <a href="#!/detail" class="box__icon-link" ng-click="saveData(item)"> <i
-                                    class="fa-solid fa-eye "></i></a>
-                        </div>
-                        <div class="gallsery-box__img">
-                            <div class="box__img" style="background-image: url('{{item.image}}');
+<!-- our gallsery -->
+<div class="container">
+    <div class="container-gallery">
+        <div class="head">
+            <h1> Our <span class="span-text"> Gallsery</span> </h1>
+            <a class="view-all" ng-click="saveType('gallsery')" href="#!shop">View All >></a>
+        </div>
+        <div class="gallsery-conten">
+            <div class=" wd-thir mg-small s-col-full" ng-repeat="item in  dataProduct | filter :{'type':'gallsery'}">
+                <div class="gallsery-box">
+                    <div class="gallsery-box__icon">
+                        <a href="" class="box__icon-link"> <i class="fa-solid fa-heart "></i></a>
+                        <a href="" class="box__icon-link"> <i class="fa-solid fa-cart-shopping "></i></a>
+                        <a href="#!/detail" class="box__icon-link" ng-click="saveData(item)"> <i
+                                class="fa-solid fa-eye "></i></a>
+                    </div>
+                    <div class="gallsery-box__img">
+                        <div class="box__img" style="background-image: url('{{item.image}}');
                            ">
-                            </div>
                         </div>
                     </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- clients Review -->
+<div class="head-bg ">
+    <h2 class="bd-ourShop__head
+    ">Client's Review</h2>
+</div>
+<div class="container">
+    <div class="container-client">
+
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-cilent">
+                <div class="client-img" style="background-image: url(./images/icons-1.png);
+                      ">
+
+                </div>
+                <div class="client-content">
+                    <span>Fast Delivery</span>
+                    <p>Within 30 Minutes</p>
+                </div>
+            </div>
+        </div>
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-cilent">
+                <div class="client-img" style="background-image: url(../images/icons-2.png);
+                      ">
+
+                </div>
+                <div class="client-content">
+                    <span>24 / 7 Available</span>
+                    <p>Call Us Anytime</p>
+                </div>
+            </div>
+        </div>
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-cilent">
+                <div class="client-img" style="background-image: url(../images/icons-3.png);
+                      ">
+
+                </div>
+                <div class="client-content">
+                    <span>Easy Payments</span>
+                    <p>Cash Or Credit</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- clients Review -->
-    <div class="container">
-        <div class="head-bg ">
-            <h2 class="bd-ourShop__head
-        ">Client's Review</h2>
-        </div>
-        <div class="container-client">
+</div>
+<!-- Person cilent  -->
+<div class="container">
 
-            <div class="wd-thir s-col-full mg-small">
-                <div class="box-cilent">
-                    <div class="client-img" style="background-image: url(./images/icons-1.png);
-                      ">
+    <div class="container-preson">
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-person">
+                <div class="box-person__head">
+                    <div class="box-avata" style="background-image: url('./images/pic-1.png');">
 
                     </div>
-                    <div class="client-content">
-                        <span>Fast Delivery</span>
-                        <p>Within 30 Minutes</p>
+                    <div class="box-heading">
+                        <h3>Edward Bey</h3>
+                        <p>Happ cilent</p>
+
                     </div>
                 </div>
-            </div>
-            <div class="wd-thir s-col-full mg-small">
-                <div class="box-cilent">
-                    <div class="client-img" style="background-image: url(../images/cat-3.jpg);
-                      ">
-
-                    </div>
-                    <div class="client-content">
-                        <span>24 / 7 Available</span>
-                        <p>Call Us Anytime</p>
-                    </div>
-                </div>
-            </div>
-            <div class="wd-thir s-col-full mg-small">
-                <div class="box-cilent">
-                    <div class="client-img" style="background-image: url(../images/icons-3.png);
-                      ">
-
-                    </div>
-                    <div class="client-content">
-                        <span>Easy Payments</span>
-                        <p>Cash Or Credit</p>
-                    </div>
+                <div class="box-person-content">
+                    <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
                 </div>
             </div>
         </div>
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-person">
+                <div class="box-person__head">
+                    <div class="box-avata" style="background-image: url('./images/pic-2.png');">
+
+                    </div>
+                    <div class="box-heading">
+                        <h3>Edward Bey</h3>
+                        <p>Happ cilent</p>
+
+                    </div>
+                </div>
+                <div class="box-person-content">
+                    <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+            </div>
+        </div>
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-person">
+                <div class="box-person__head">
+                    <div class="box-avata" style="background-image: url('./images/pic-3.png');">
+
+                    </div>
+                    <div class="box-heading">
+                        <h3>Edward Bey</h3>
+                        <p>Happ cilent</p>
+
+                    </div>
+                </div>
+                <div class="box-person-content">
+                    <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!-- Person cilent  -->
-    <div class="container">
-
-        <div class="container-preson">
-            <div class="wd-thir s-col-full mg-small">
-                <div class="box-person">
-                    <div class="box-person__head">
-                        <div class="box-avata" style="background-image: url('./images/pic-1.png');">
-
-                        </div>
-                        <div class="box-heading">
-                            <h3>Edward Bey</h3>
-                            <p>Happ cilent</p>
-
-                        </div>
-                    </div>
-                    <div class="box-person-content">
-                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-                    </div>
-                </div>
-            </div>
-            <div class="wd-thir s-col-full mg-small">
-                <div class="box-person">
-                    <div class="box-person__head">
-                        <div class="box-avata" style="background-image: url('./images/pic-2.png');">
-
-                        </div>
-                        <div class="box-heading">
-                            <h3>Edward Bey</h3>
-                            <p>Happ cilent</p>
-
-                        </div>
-                    </div>
-                    <div class="box-person-content">
-                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-                    </div>
-                </div>
-            </div>
-            <div class="wd-thir s-col-full mg-small">
-                <div class="box-person">
-                    <div class="box-person__head">
-                        <div class="box-avata" style="background-image: url('./images/pic-3.png');">
-
-                        </div>
-                        <div class="box-heading">
-                            <h3>Edward Bey</h3>
-                            <p>Happ cilent</p>
-
-                        </div>
-                    </div>
-                    <div class="box-person-content">
-                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+</div>
 
 </div>
 <!-- our blogs -->
@@ -368,7 +375,7 @@
     ">Our blogs</h2>
 </div>
 <div class="container">
-    <!-- <div class="container-blogs">
+    <div class="container-blogs">
         <div class="head">
             <h1> Our <span class="span-text"> Blogs</span></h1>
             <a href="../views/blog.html" class="view-all">View All >></a>
@@ -426,7 +433,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 </div>
 <!-- contact  -->
