@@ -1,0 +1,516 @@
+<div ng-controller="homeCtrl">
+    <!-- body -->
+    <!-- carousel -->
+
+
+
+    <div class="carousel">
+
+        <div class="container">
+            <div class="slides-container">
+                <div class="fade show">
+                    <div class="slide">
+                        <div class="content">
+                            <span>Have a Cake-A-Licious</span>
+                            <h3>up to 50% off</h3>
+                            <a href="#" class="btn">Shop Now</a>
+                        </div>
+                        <div class="img" style="background-image: url('../images/home-img-3.png')">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="fade">
+                    <div class="slide ">
+                        <div class="content">
+                            <span>Have a Cake-A-Licious</span>
+                            <h3>up to 50% off</h3>
+                            <a href="#" class="btn">Shop Now</a>
+                        </div>
+                        <div class="img" style="background-image: url('..//images/home-img-2.png')">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="fade">
+                    <div class="slide ">
+                        <div class="content">
+                            <span>Have a Cake-A-Licious</span>
+                            <h3>up to 50% off</h3>
+                            <a href="#" class="btn">Shop Now</a>
+                        </div>
+                        <div class="img" style="background-image: url('..//images/home-img-3.png')">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="fade">
+                    <div class="slide">
+                        <div class="content">
+                            <span>Have a Cake-A-Licious</span>
+                            <h3>up to 50% off</h3>
+                            <a href="#" class="btn">Shop Now</a>
+                        </div>
+                        <div class="img" style="background-image: url('..//images/home-img-3.png')">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="next-slide" class="fas fa-angle-right" ng-click="next()"></div>
+        <div id="prev-slide" class="fas fa-angle-left" ng-click="prev()"></div>
+
+    </div>
+    <!-- banner -->
+    <div class="container">
+        <div class="container-banner">
+            <div class="wd-thir s-col-full m-haft">
+                <div class="banner">
+                    <div class="banner-img" style="background-image: url('..//images/banner-1.jpg');">
+                    </div>
+                    <div class="banner-content">
+                        <span>limited sales</span>
+                        <h3>upto 50% off</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full m-haft">
+
+                <div class="banner">
+                    <div class="banner-img" style="background-image: url('..//images/banner-2.jpg');">
+                    </div>
+                    <div class="banner-content">
+                        <span>limited sales</span>
+                        <h3>upto 50% off</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full m-haft">
+                <div class="banner">
+                    <div class="banner-img" style="background-image: url('../images/banner-3.jpg');">
+                    </div>
+                    <div class="banner-content">
+                        <span>limited sales</span>
+                        <h3>upto 50% off</h3>
+                        <a href="#" class="btn">shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our Shop -->
+    <div class="head-bg">
+        <h2 class="bd-ourShop__head
+    ">Our Shop</h2>
+    </div>
+    <!-- our category  -->
+    <div class="container">
+        <div class="container-category">
+            <div class="head">
+                <h1> Our <span class="span-text"> Category</span></h1>
+                <a class="view-all" ng-click="saveType()">View All >></a>
+            </div>
+            <div class="category-content">
+                <div class="box-category wd-five col-thir s-col-full">
+                    <div class="img-cat" style="background-image: url('../images/cat-1.jpg');
+                    height: 214px;">
+
+                    </div>
+                    <h3>Fresh Cupcake</h3>
+                </div>
+                <div class="box-category wd-five col-thir s-col-full">
+                    <div class="img-cat" style="background-image: url('../images/cat-2.jpg');
+                    height: 214px;">
+
+                    </div>
+                    <h3>Fresh Cupcake</h3>
+                </div>
+                <div class="box-category wd-five col-thir s-col-full">
+                    <div class="img-cat" style="background-image: url('../images/cat-3.jpg');
+                    height: 214px;">
+
+                    </div>
+                    <h3>Fresh Cupcake</h3>
+                </div>
+                <div class="box-category wd-five col-thir s-col-full">
+                    <div class="img-cat" style="background-image: url('..//images/cat-4.jpg');
+                    height: 214px;">
+
+                    </div>
+                    <h3>Fresh Cupcake</h3>
+                </div>
+                <div class="box-category wd-five col-thir s-col-full">
+                    <div class="img-cat" style="background-image: url('..//images/cat-5.jpg');
+                    height: 214px;">
+
+                    </div>
+                    <h3>Fresh Cupcake</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our products -->
+    <div class="container">
+        <div class="container-product">
+            <div class="head">
+                <h1> Our<span class="span-text"> Products</span> </h1>
+                <a class="view-all" href="#!/shop">View All >></a>
+            </div>
+            <div class="product-content">
+                <div class=" box-product wd-for col-thir s-col-full"
+                    ng-repeat=" item in dataProduct | filter:{'type':'Anniversary'} ">
+                    <div class=" product-icon">
+                        <div class="box-icon">
+                            <a href="" class="icon-link"> <i class="fa-solid fa-heart "></i></a>
+                            <a href="" class="icon-link"> <i class="fa-solid fa-cart-shopping "></i></a>
+                            <a href="#!/detail" class="icon-link" ng-click="saveData(item)"> <i
+                                    class="fa-solid fa-eye "></i></a>
+                        </div>
+                    </div>
+                    <ol class="box-list">
+                        <li class="box-item">
+                            <div class="box-item__img" style="background-image: url('{{item.image}}');
+                    height: 214px;">
+                        </li>
+                        <li class="box-item">
+                            <h3>{{item.name}}</h3>
+                        </li>
+                        <li class="box-item">
+                            <span>{{item.type}}</span>
+                        </li>
+
+                        <li class="box-item"><span>$ {{item.price}}</span></li>
+                        <li class="box-item">
+                            <ul class="list-icon">
+                                <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About us -->
+    <div class="head-bg">
+        <h2 class="bd-ourShop__head
+    ">About Us</h2>
+    </div>
+    <div class="container">
+        <div class="about">
+
+            <div class="about-img wd-haft s-col-full">
+            </div>
+            <div class="about-conten wd-haft s-col-full">
+                <span>welcome to our products</span>
+                <h3>Cake-A-Licious products</h3>
+                <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore farhan aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                    in voluptate </p>
+                <p class="text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    farhan aliqua. Ut enim ad minim veniam, quis</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- our gallsery -->
+    <div class="container">
+        <div class="container-gallery">
+            <div class="head">
+                <h1> Our <span class="span-text"> Gallsery</span> </h1>
+                <a class="view-all" ng-click="saveType('gallsery')" href="#!shop">View All >></a>
+            </div>
+            <div class="gallsery-conten">
+                <div class=" wd-thir mg-small s-col-full"
+                    ng-repeat="item in  dataProduct | filter :{'type':'gallsery'}">
+                    <div class="gallsery-box">
+                        <div class="gallsery-box__icon">
+                            <a href="" class="box__icon-link"> <i class="fa-solid fa-heart "></i></a>
+                            <a href="" class="box__icon-link"> <i class="fa-solid fa-cart-shopping "></i></a>
+                            <a href="#!/detail" class="box__icon-link" ng-click="saveData(item)"> <i
+                                    class="fa-solid fa-eye "></i></a>
+                        </div>
+                        <div class="gallsery-box__img">
+                            <div class="box__img" style="background-image: url('{{item.image}}');
+                           ">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- clients Review -->
+    <div class="head-bg">
+        <h2 class="bd-ourShop__head
+    ">Client's Review</h2>
+    </div>
+    <div class="container">
+        <div class="container-client">
+
+            <div class="wd-thir s-col-full mg-small">
+                <div class="box-cilent">
+                    <div class="client-img" style="background-image: url(../images/icons-1.png);
+                      ">
+
+                    </div>
+                    <div class="client-content">
+                        <span>Fast Delivery</span>
+                        <p>Within 30 Minutes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full mg-small">
+                <div class="box-cilent">
+                    <div class="client-img" style="background-image: url(../images/icons-2.png);
+                      ">
+
+                    </div>
+                    <div class="client-content">
+                        <span>24 / 7 Available</span>
+                        <p>Call Us Anytime</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full mg-small">
+                <div class="box-cilent">
+                    <div class="client-img" style="background-image: url(../images/icons-3.png);
+                      ">
+
+                    </div>
+                    <div class="client-content">
+                        <span>Easy Payments</span>
+                        <p>Cash Or Credit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Person cilent  -->
+    <div class="container">
+
+        <div class="container-preson">
+            <div class="wd-thir s-col-full mg-small">
+                <div class="box-person">
+                    <div class="box-person__head">
+                        <div class="box-avata" style="background-image: url('../images/pic-1.png');">
+
+                        </div>
+                        <div class="box-heading">
+                            <h3>Edward Bey</h3>
+                            <p>Happ cilent</p>
+
+                        </div>
+                    </div>
+                    <div class="box-person-content">
+                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full mg-small">
+                <div class="box-person">
+                    <div class="box-person__head">
+                        <div class="box-avata" style="background-image: url('../images/pic-2.png');">
+
+                        </div>
+                        <div class="box-heading">
+                            <h3>Edward Bey</h3>
+                            <p>Happ cilent</p>
+
+                        </div>
+                    </div>
+                    <div class="box-person-content">
+                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full mg-small">
+                <div class="box-person">
+                    <div class="box-person__head">
+                        <div class="box-avata" style="background-image: url('../images/pic-3.png');">
+
+                        </div>
+                        <div class="box-heading">
+                            <h3>Edward Bey</h3>
+                            <p>Happ cilent</p>
+
+                        </div>
+                    </div>
+                    <div class="box-person-content">
+                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!-- our blogs -->
+<div class="head-bg">
+    <h2 class="bd-ourShop__head
+    ">Our blogs</h2>
+</div>
+<div class="container">
+    <!-- <div class="container-blogs">
+        <div class="head">
+            <h1> Our <span class="span-text"> Blogs</span></h1>
+            <a href="../views/blog.html" class="view-all">View All >></a>
+        </div>
+        <div class="container-box-blogs">
+            <div class="wd-thir  s-col-full mg-small">
+
+                <div class="box-blog">
+                    <div class="box-header">
+                        <img class="box-header__img" decoding="async" src="./images/blog-1.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <div class=" box-content__icon">
+                            <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+                            <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+                        </div>
+                        <h3>blogs title page</h3>
+                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                        <a href="../views/blog.html" class="btn">read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full  mg-small">
+
+                <div class="box-blog ">
+                    <div class="box-header">
+                        <img class="box-header__img" decoding="async" src="./images/blog-2.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <div class=" box-content__icon">
+                            <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+                            <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+                        </div>
+                        <h3>blogs title page</h3>
+                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                        <a href="../views/blog.html" class="btn">read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wd-thir s-col-full mg-small">
+
+                <div class="box-blog">
+                    <div class="box-header">
+                        <img class="box-header__img" decoding="async" src="./images/blog-3.jpg" alt="">
+                    </div>
+                    <div class="box-content">
+                        <div class=" box-content__icon">
+                            <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+                            <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+                        </div>
+                        <h3>blogs title page</h3>
+                        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+                        <a href="../views/blog.html" class="btn">read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</div>
+<!-- contact  -->
+<div class="head-bg">
+    <h2 class="bd-ourShop__head
+    ">Contact</h2>
+</div>
+<div class="container">
+    <div class="container-box__address">
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-address ">
+                <ol class="box-address-list">
+                    <li class="box-address__item"><a href="" class="box-address-link"><i
+                                class="fa-solid fa-phone"></i></a></li>
+                    <li class="box-address__item">
+                        <h2>Our Number</h2>
+                    </li>
+                    <li class="box-address__item"><a href="" class="box-address-link">+111 222-3333</a></li>
+                    <li class="box-address__item"><a href="" class="box-address-link"> +456 786-7890</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-address ">
+                <ol class="box-address-list">
+                    <li class="box-address__item"><a href="" class="box-address-link"><i
+                                class="fa-solid fa-envelope"></i></a></li>
+                    <li class="box-address__item">
+                        <h2>Our Email</h2>
+                    </li>
+                    <li class="box-address__item"><a href="" class="box-address-link">shaikhfarhan@gmail.com</a>
+                    </li>
+                    <li class="box-address__item"><a href="" class="box-address-link">
+                            xyzemail@gmail.com</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="wd-thir s-col-full mg-small">
+            <div class="box-address">
+                <ol class="box-address-list">
+                    <li class="box-address__item"><a href="" class="box-address-link"><i
+                                class="fa-sharp fa-solid fa-location-dot"></i></a></li>
+                    <li class="box-address__item">
+                        <h2>Our Address</h2>
+                    </li>
+                    <li class="box-address__item"><a href="" class="box-address-link">mumbai, india -
+                            401203</a>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-register">
+        <div class="wd-haft s-full-width">
+            <div class="box-touch sadow">
+                <form name="touch">
+                    <h3>Get in Touch</h3>
+                    <div class="info">
+                        <input type="text" class="info-name wd-haft s-col-full" placeholder="Enter your name" />
+                        <input type="email" class="info-email wd-haft s-col-full" placeholder="Enter your email" />
+                    </div>
+                    <div class="info">
+                        <input type="text" class="info-number wd-haft s-col-full" placeholder="Enter your number" />
+                        <input type="email" class="info-subject wd-haft s-col-full" placeholder="Enter your  subject" />
+                    </div>
+                    <div class="info">
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <a type="submit" class="btn">Send message</a>
+                </form>
+            </div>
+        </div>
+        <div class="wd-haft s-full-width">
+            <div class="box-map">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.277428229037!2d106.64782024265908!3d10.786834253624187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2sin!4v1687748371132!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>

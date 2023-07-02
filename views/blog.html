@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://unpkg.com/@jsweb/font-awesome-base64/fa-all.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <!--   script  jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- script angular -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <!-- script bootrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script data-require="angular-ui-bootstrap@0.3.0" data-semver="0.3.0"
+        src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.3.0.min.js">
+        </script>
+</head>
+
+<body>
+    
+    <nav class="nav">
+        <div class="nav-log">
+            <i class="fa-solid fa-basket-shopping mg-t12"></i>
+            <h1 class="head-log"> Cake</h1>
+        </div>
+        <div class="nav-body">
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+
+                <li class="nav-item"><a href="../index.html#!/shop" class="nav-link">Shop</a></li>
+
+                <li class="nav-item"><a href="../index.html#!/about" class="nav-link">About</a></li>
+
+                <li class="nav-item"><a href="" class="nav-link">Review</a></li>
+
+                <li class="nav-item"><a href="#!blog" class="nav-link">Blog</a></li>
+
+                <li class="nav-item"><a href="../index.html#!/contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-info">
+            <ul class="info-list">
+                <li class="info-item"><a href="" class="info-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="info-item"><a href="" class="info-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+                <li class="info-item"><a href="" class="info-link"><i class="fa-solid fa-user"></i></a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="bg-shop"></div>
+    <br>
+    <div class="container">
+        
+        <div class="container-blog">
+    
+            <div class="blog-img">
+                <div class="image">
+                    <img src="../images/blog-1.jpg" alt="">
+                </div>
+                <div class="blog-detail">
+                    <div class="read-more-container"></div>                
+                    <span class="blog-detail-span">Blog-DailyBeat</span>
+                    <h2 class="blog-detail-h2">10 ICE CREAM INSPIRED CAKES</h2>
+                    <p style="color: black;">
+                        <span style="padding-left: 25px;">Today</span> is National Ice Cream Day! If there’s one thing we
+                        love as much as cake around here, it’s ice
+                        cream! Because cake and ice cream are the perfect pair and were destined to be together. Today we’re
+                        taking a look at some of our favorite ice cream inspired layer cakes. While you won’t find any
+                        actual ice cream in these babies, you will find classic ice cream flavors baked into fluffy cake
+                        layers and creamy frostings. Layered into delectable, sliceable, serve-able, non-melting cake!
+                        Here’s 10 Ice Cream Inspired Cakes!
+                    </p>
+                    <p class="blog-readmore" style="color: black;">
+                        1. Ice Cream Cake. <br>
+                        2. Banana Split Cake. <br>
+                        3. Mint Cookies N Cream Cake. <br>
+                        4. Neapolitan Cake. <br>
+                        5. Rocky Road Cake. <br>
+                        6. Ultimate Sundae Cake. <br>
+                        7. Strawberry Crunch Cake. <br>
+                        8. Mint Chocolate Chip Cake. <br>
+                        9. Butter Pecan Cake. <br>
+                        10. Orange Creamsicle Cake. <br>
+                    </p>
+                    <label class="btn" for="check" onclick="handleShow(0)">Read More</label>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <div class="blog-img ">
+                <div class="image">
+                    <img src="../images/Anniversary-img/product-8.jpg" alt="">
+                </div>
+                <div class="blog-detail">
+                    <div class="read-more-container"></div>
+                    <span class="blog-detail-span">Blog-DailyBeat</span>
+                    <h2 class="blog-detail-h2">S’MORES CAKE</h2>
+                    <p style="color: black;">
+                        <span style="padding-left: 25px;">S'mores Cake</span> - Chocolate cake with graham cracker
+                        buttercream filling, chocolate ganache
+                        frosting and toasted marshmallow meringue. A s'mores inspired layer cake recipe by our
+                        contributor, Tessa Huff. For some, the perfect summer vacation isn’t without umbrella drinks and
+                        resort pools, but for others, nothing beats a beach bonfire or weekend campout among family and
+                        friends. Personally, I love a little of both, but living in the city does make me yearn for
+                        nature and a bit of solitude ...
+                    </p>
+                    <p class="blog-readmore" style="color: black;">
+                        For some, the perfect summer vacation isn’t without umbrella drinks and resort pools, but for
+                        others, nothing beats a beach bonfire or weekend campout among family and friends. Personally, I
+                        love a little of both, but living in the city does make me yearn for nature and a bit of solitude
+                        from time to time. A chance to unplug and enjoy the wildlife before heading back to the hustle and
+                        bustle. That, or just the chance to make S’MORES!
+                    </p>
+                    <label class="btn" for="check" onclick="handleShow(1)">Read More</label>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <div class="blog-img ">
+                <div class="image">
+                    <img src="../images/gallery/gallery-img-3.jpg" alt="">
+                </div>
+                <div class="blog-detail" style="color: black;">
+                    <div class="read-more-container"></div>
+                    <span class="blog-detail-span">Blog-DailyBeat</span>
+                    <h2 class="blog-detail-h2">CHOCOLATE TRUFFLE CAKE</h2>
+                    <p>
+                        <span style="padding-left: 25px;">Let</span> me tell you though, this Chocolate Truffle Cake will
+                        satisfy any chocolate lovers craving.
+                        The cake itself is dense and moist, just like proper chocolate cake should be, and the
+                        frosting…. oh that frosting! Pure chocolate heaven! It’s simple, consisting of chocolate, heavy
+                        cream, and butter, which is basically how you make a chocolate truffle, albeit with slightly
+                        different proportions. It is dreamy chocolate heaven right there.
+                    </p>
+                    <p class="blog-readmore">
+                        I kept the decorating on this cake simple and classic, just like a chocolate truffle. The classic
+                        ones you find are covered in a simple dusting of cocoa powder, or sometimes coconut. Nowadays, the
+                        possibilities are endless. Because I like simple and elegant, I chose to cover the whole cake in
+                        gorgeous chocolate flakes. These may not be incredibly easy to find – I get them at a local gourmet
+                        shop – but good old-fashioned chocolate sprinkles will work too!
+                    </p>
+                    <label class="btn" for="check" onclick="handleShow(2)">Read More</label>
+    
+                </div>
+            </div>
+    
+            <hr>
+    
+            <div class="blog-img">
+                <div class="image">
+                    <img src="../images/rainbowcake.jpg" class="a" alt="">
+                </div>
+                <div class="blog-detail" style="color: black;">
+                    <div class="read-more-container"></div>
+                    <span class="blog-detail-span">Blog-DailyBeat</span>
+                    <h2 class="blog-detail-h2">RAINBOW MOSAIC CAKE</h2>
+                    <p>
+                        <span style="padding-left: 25px;">In</span> my humble opinion, Easter is the BEST time of year for
+                        candy. Not only is it tastier than ever (hello, Cadbury Mini Eggs!), but the pastel colors have me
+                        all starry-eyed and inspired! As I was recently browsing the Easter candy aisle, I couldn’t help but
+                        get all hung up on the seasonal color palette that M&Ms have got going on. After bringing them home
+                        and drawing up some ideas, I figured they’d make the perfect pastel mosaic as a cake finish and
+                        here’s what happened:
+                        <br>
+    
+                    </p>
+                    <p class="blog-readmore">
+                        So pretty, right? I will admit, the geometric design does take some planning (I’ll help you with
+                        that below!) but the results are so eye-catching. And once you get into the groove of placing
+                        the candies, the process is super therapeutic! It’s basically like putting together an edible
+                        puzzle, and since there’s no complicated technique involved, it’s the perfect project for any
+                        skill level. Just put on a great album, sneak a few candies every now and then, and put those
+                        pieces into place!
+    
+                    </p>
+                    <label class="btn" for="check" onclick="handleShow(3)">Read More</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>Shop</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>About</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Review</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>Blog</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>Contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                    <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                    <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                    <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+                </div>
+
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>subscribe for latest update</p>
+                    <form action="">
+                        <input type="email" placeholder="enter your email address">
+                        <input type="submit" value="subscribe" class="btn">
+                    </form>
+                    <img decoding="async" src="../images/payment.png" class="payments" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var blogShow = document.querySelectorAll(".blog-readmore");
+    function handleShow(index) {
+        if (blogShow[index].style.display === "block") {
+            blogShow[index].style.display = "none"
+        } else {
+            blogShow[index].style.display = "block"
+        }
+    }
+
+</script>
+
+</html>

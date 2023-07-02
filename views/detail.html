@@ -1,0 +1,139 @@
+<div class="detail" ng-controller="detailCtrl" ng-model="data">
+
+    <div class="bg-shop"></div>
+    <div class=" container">
+        <div class="container-detail">
+            <div class=" wd-haft s-full-width">
+                <div class="container-detail__img">
+
+                    <div class="detail-img" style="background-image: url('{{data.image}}');
+                   height: 313px;">
+
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="addcard wd-haft s-full-width">
+                <div class="container-detail-content ">
+                    <span class="span-detail">Usec Sans</span>
+                    <div class="content-head  bd-bottom">
+                        <h2 class="content-name">{{data.name}}</h2>
+                        <span class="content-head__price"> {{data.price}}$</span>
+                    </div>
+                    <div class="content-product bd-bottom pd-8">
+                        <div class="content-product__head">
+
+                            <h2 class="content-name">
+                                Product Description
+                            </h2>
+                            <div class="button">
+                                <a class="content-product__down" ng-click="showContent()">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </a>
+                                <a class="content-product__up hiden-btn" ng-click="hidenContent()">
+                                    <i class="fa-solid fa-chevron-up"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-product-body">
+                            <ol class="product-body__list ">
+                                <li class="product-body__item">
+                                    <p class="p-product">{{data.descript.describe}}</p>
+                                </li>
+                                <li class="product-body__item">
+                                    <span class="span-product">
+                                        Ingredients
+                                    </span>
+
+                                    <p class="p-product">
+                                        {{data.descript.ingredientts}},{{data.egg}}
+                                    </p>
+                                </li>
+                                <li class="product-body__item">
+                                    <span class="span-product">
+                                        Allergens
+                                    </span>
+                                    <p class="p-product">
+                                        {{data.descript.allergens}}
+                                    </p>
+                                </li>
+                                <li class="product-body__item">
+                                    <span class="span-product">
+                                        Weight & Dimensions
+                                    </span>
+                                    <p class="p-product">
+                                        {{data.descript.weight}}-{{data.descript.dimensions}}
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="content-date bd-bottom pd-8">
+                        <h2 class="content-name">
+                            Select delivery
+                        </h2>
+                        <input type="date" class="content-date__input">
+                    </div>
+                    <div class="content-param bd-bottom pd-8">
+                        <div class="wd-thir s-full-width">
+                            <span class="span-detail">Quantily</span>
+                            <input type="number" class="param__quantily  s-full-width" />
+                        </div>
+                        <div class="wd-thir s-full-width">
+                            <span class="span-detail">Size</span><br>
+                            <select name="" id="" class="param-size">
+                                <option value="">S</option>
+                                <option value="">M</option>
+                                <option value="">L</option>
+
+                            </select>
+                        </div>
+                        <div class="wd-thir s-full-width">
+                            <span class="span-detail">Candles</span><br>
+                            <select name="" id="" class="param__candles">
+                                <option value="">10</option>
+                                <option value="">20</option>
+                                <option value="">30</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="content-mesage bd-bottom pd-8">
+                        <h2 class="content-name">
+                            Card message
+                        </h2>
+                        <textarea name="" id="" cols="30" rows="10" class="content-mesage-text"></textarea>
+                    </div>
+                    <button class="btn content-add " type="submit" style="width: 100%;margin:  16px 0;">Add
+                        to
+                        card</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="footer-driver">
+        <div class="container driver">
+
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>SAME DAY CAKE DELIVERY ON
+                    ORDERS BEFORE 3PM (MON-FRI)</span>
+            </div>
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-clock"></i>
+                <span>CHOOSE YOUR PREFERRED
+                    DELIVERY SLOT</span>
+            </div>
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-user-secret"></i>
+                <span>CAKES FROM BEST
+                    RATED LOCAL BAKERS</span>
+            </div>
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-cake-candles"></i>
+                <span>FINEST SELECTION
+                    OF CAKES</span>
+            </div>
+        </div>
+    </div>
+</div>

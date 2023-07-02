@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cake Shop</title>
+    <!-- link bootrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://unpkg.com/@jsweb/font-awesome-base64/fa-all.css" />
+    <!-- link css -->
+    <link rel="stylesheet" href="..//css/main.css">
+    <link rel="stylesheet" href="..//css/base.css">
+    <link rel="stylesheet" href="..//css/responsive.css">
+
+    <!--   script  jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- script angular -->
+    <script type="application/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+
+
+    <!-- script bootrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script data-require="angular-ui-bootstrap@0.3.0" data-semver="0.3.0"
+        src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.3.0.min.js">
+        </script>
+    <!-- absolute -->
+    <!-- <script src="./js/index.js"></script> -->
+
+</head>
+
+<body>
+    <!-- header nav -->
+    <div ng-controller="navCtrl">
+
+        <header class="header">
+            <div class="container">
+
+                <nav class="nav">
+                    <div class="nav-btn l-hiden" ng-click="showNavbar()">
+                        <i class="fa-solid fa-bars"></i>
+
+                    </div>
+                    <div class="nav-log">
+                        <i class="fa-solid fa-basket-shopping mg-t12"></i>
+                        <h1 class="head-log"> Cake</h1>
+                    </div>
+
+                    <div class="nav-body s-hiden">
+
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#/!" class="nav-link">Home</a></li>
+
+                            <li class="nav-item"><a href="#!/shop" class="nav-link">Shop</a></li>
+
+                            <li class="nav-item"><a href="
+                                #!about" class="nav-link">About</a></li>
+
+                            <li class="nav-item"><a href="" class="nav-link">Review</a></li>
+
+                            <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+
+                            <li class="nav-item"><a href="#!/contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-info s-hiden">
+                        <ul class="info-list">
+                            <li class="info-item"><a class="info-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li class="info-item"><a class="info-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li class="info-item"><a class="info-link"><i class="fa-solid fa-user"></i></a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <nav class="nav-sidebar l-hiden">
+
+            <div class=" box-siderbar">
+                <div class="container-sidebar">
+
+                    <div class="search">
+                        <div class="box-map">
+                            <iframe class="map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.277428229037!2d106.64782024265908!3d10.786834253624187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2sin!4v1687748371132!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <ul class="list-search">
+                            <li class="product-item__type item-search">
+                                <a class="product-link__type" href="#/!"><i
+                                        class="fa-solid fa-house icon-active"></i>Home</a>
+                            </li>
+                            <li class="product-item__type item-search product-item__shop ">
+                                <a class="product-link__type" href="#!/shop"><i
+                                        class="fa-solid fa-shop icon-active"></i>Shop</a>
+                                <ol class="nav-list__product">
+
+                                    <li class="item-search"><span class="span-title"> Price product</span>
+                                        <input type="range" min="0" max="100" oninput="rangevalue.value=value +'$'" />
+                                        <output id="rangevalue">50$</output>
+                                    </li>
+                                    <li class="item-search ">
+                                        <span class="span-title">Type product</span>
+                                        <ul class="product-list__type">
+                                            <li class="product-item__type">
+                                                <a class="product-link__type" data-set="birthday"
+                                                    ng-click="getType('birthday')" value="birthday">Birthday</a>
+                                            </li>
+                                            <li class="product-item__type"><a class="product-link__type"
+                                                    data-set="Marriage" ng-click="getType('Marriage')">Marriagey</a>
+                                            </li>
+                                            <li class="product-item__type"><a class="product-link__type"
+                                                    data-set="Anniversary"
+                                                    ng-click="getType('Anniversary')">Anniversary</a>
+                                            </li>
+                                            <li class="product-item__type"><a class="product-link__type"
+                                                    data-set="gallsery" ng-click="getType('gallsery')">Gallsery</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="item-search">
+                                        <span class="span-title">Name product</span>
+                                        <input type="text" placeholder="search name product" ng-model="name"
+                                            class="search-name">
+                                    </li>
+                                    <li class=" item-search">
+                                        <span class="span-title">Egg</span>
+                                        <ul class="product-list__type">
+                                            <li class="product-item__type"><a href="" class="product-link__type"
+                                                    ng-model="egg" ng-click="orderfilEgg('with Egg')"
+                                                    data-set="with Egg">With Egg</a>
+                                            </li>
+                                            <li class="product-item__type"><a href="" class="product-link__type"
+                                                    ng-model="egg" ng-click="orderfilEgg('no')" data-set="no">Have Egg
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="product-item__type item-search">
+                                <a class="product-link__type"><i
+                                        class="fa-solid fa-address-card icon-active"></i>About</a>
+                            </li>
+                            <li class="product-item__type item-search">
+                                <a class="product-link__type"><i
+                                        class="fa-sharp fa-solid fa-magnifying-glass-dollar icon-active"></i>Review</a>
+                            </li>
+                            <li class="product-item__type item-search">
+                                <a class="product-link__type"><i class="fa-solid fa-blog icon-active"></i>Blog</a>
+                            </li>
+                            <li class="product-item__type item-search">
+                                <a class="product-link__type "><i
+                                        class="fa-solid fa-address-book icon-active"></i>Contact</a>
+                            </li>
+                            <li class="product-item__type item-search">
+                                <a class="product-link__type"><i
+                                        class="fa-solid fa-user icon-active icon-active"></i>Account</a>
+                            </li>
+                            <li class="product-item__type item-search">
+                                <a class="product-link__type" ng-click=""><i
+                                        class="fa-solid fa-cart-shopping icon-active"></i>Cart</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="nav-btn__close" ng-click="hidenNavbar()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+
+    <div ng-view>
+
+    </div>
+    <!--footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>Shop</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>About</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> Review</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>Blog</a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i>Contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my order </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my favorite </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> terms or use </a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                    <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                    <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                    <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+                </div>
+
+                <div class="box">
+                    <h3>newsletter</h3>
+                    <p>subscribe for latest update</p>
+                    <form action="">
+                        <input type="email" placeholder="enter your email address">
+                        <input type="submit" value="subscribe" class="btn">
+                    </form>
+                    <img decoding="async" src="./images/payment.png" class="payments" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    // carousel
+    // let navbar = document.querySelector('.navbar');
+
+    // document.querySelector('#menu-btn').onclick = () => {
+    //     navbar.classList.toggle('active');
+    // }
+
+    // window.onscroll = () => {
+    //     navbar.classList.remove('active');
+    // }
+
+    /*famework angular js */
+    //
+    var myApp = angular.module("myApp", ["ngRoute"]);
+    myApp.config(function ($routeProvider) {
+        $routeProvider
+
+            .when("/", {
+                templateUrl: "views/home.html",
+                controller: "homeCtrl",
+            })
+            .when("/home", {
+                templateUrl: "views/home.html",
+                controller: "homeCtrl",
+            })
+            .when("/shop", {
+                templateUrl: "views/shop.html",
+
+            })
+            .otherwise({
+                redirectTo: "/",
+            })
+            .when("/contact", {
+                templateUrl: "views/contact.html",
+            })
+            .when("/about", {
+                templateUrl: "views/about.html",
+            })
+            .when("/detail", {
+                templateUrl: "views/detail.html",
+                controller: "detailCtrl",
+            })
+    });
+    myApp.run(function ($rootScope, $http) {
+        $http.get("./data/data.json").then(function (response) {
+            $rootScope.dataProduct = response.data.details;
+            console.log(response);
+        });
+    });
+    // factory
+    myApp.factory("myService", function () {
+        var savedData = {};
+        var saveType = "";
+        // set data product
+        function set(data) {
+            savedData = data;
+        }
+        function get() {
+            return savedData;
+        }
+
+        // save type product
+        function setTypeProduct(type) {
+            saveType = type;
+        }
+        function getTypeproduct() {
+            return saveType;
+        }
+
+        return {
+            set: set,
+            get: get,
+            setTypeProduct: setTypeProduct,
+            getTypeproduct: getTypeproduct,
+        };
+    });
+    // nav constroller
+    myApp.controller("navCtrl", function ($scope) {
+        $scope.showNavbar = function () {
+            $(".nav").hide();
+            $(".nav-sidebar").show();
+        };
+        $scope.hidenNavbar = function () {
+            $(".nav").show();
+            $(".nav-sidebar").hide();
+        };
+    });
+    // home controller
+    myApp.controller("homeCtrl", function ($scope, myService) {
+        let fade = document.querySelectorAll(".fade");
+
+        let index = 0;
+
+        $scope.next = function () {
+            fade[index].classList.remove("show");
+            index = (index + 1) % fade.length;
+            fade[index].classList.add("show");
+        };
+
+        $scope.prev = function () {
+            fade[index].classList.remove("show");
+            index = (index - 1 + fade.length) % fade.length;
+            fade[index].classList.add("show");
+        };
+        // save data to myService
+        $scope.saveData = function (data) {
+            myService.set(data);
+        };
+        // save type to myserevice
+        $scope.saveType = function (type) {
+            myService.setTypeProduct(type);
+        };
+    });
+    // shop controller
+    myApp.controller("shopCtrl", function ($scope, myService) {
+        // get type from myservice
+        $scope.typeProduct = myService.getTypeproduct();
+        console.log($scope.dataProduct);
+        // get data from filr json
+
+        // varible nagination page
+
+        ($scope.currentPage = 1), ($scope.pageSize = 12);
+
+        // get type from myservice
+
+        $scope.filter = $scope.typeProduct;
+        console.log($scope.filter);
+        $scope.getType = function (typeProduct) {
+            console.log(typeProduct);
+            $scope.type = typeProduct;
+        };
+        $scope.orderfilEgg = function (egg) {
+            $scope.egg = egg;
+        };
+
+        //
+
+        // save item data  myservice
+        $scope.saveData = function (item) {
+            myService.set(item);
+        };
+
+        // range input change background by price
+
+        // filter product from data
+    });
+
+    // contact controller
+    myApp.controller("contactCtrl", function ($scope) { });
+    // detail controller
+    myApp.controller("detailCtrl", function ($scope, myService) {
+        // get  data from myservice
+        $scope.data = myService.get();
+
+        $scope.data.image == null
+            ? ($scope.data.image =
+                "./images/Cute_girl_bakery_logo_homemade_bakery_shop_hand_drawn_cartoon_art_illustration.jpg")
+            : null;
+
+        // get by class tag
+        let contentBody = document.querySelector(".content-product-body");
+        let btnDown = document.querySelector(".content-product__down");
+        let btnUp = document.querySelector(".content-product__up");
+        // show hiden content  body Product
+        $scope.showContent = function () {
+            contentBody.classList.add("product-active");
+
+            btnDown.classList.add("hiden-btn");
+
+            btnUp.classList.remove("hiden-btn");
+            btnUp.classList.add("show-btn");
+        };
+        $scope.hidenContent = function () {
+            contentBody.classList.remove("product-active");
+
+            btnDown.classList.add("show-btn");
+            btnDown.classList.remove("hiden-btn");
+
+            btnUp.classList.add("hiden-btn");
+            btnUp.classList.remove("show-btn");
+        };
+        // zoom img product
+
+        // let magnifying_area = document.getElementById("magnifying_area");
+        // let magnifying_img = document.getElementById("magnifying_img");
+        // magnifying_area.addEventListener("mousemove", function (event) {
+        //   let clientX = event.clientX - magnifying_area.offsetLeft;
+        //   let clinetY = event.clientY - magnifying_area.offsetTop;
+
+        //   mWidth = magnifying_area.offsetWidth;
+        //   mHeight = magnifying_area.offsetHeight;
+
+        //   clientX = (clientX / mWidth) * 100;
+        //   clinetY = (clinetY / mWidth) * 100;
+
+        //   magnifying_img.style.transform =
+        //     "translate(-" + clientX + "%,-" + clinetY + "%) scale(2.4)";
+        // });
+        // magnifying_area.addEventListener("mouseleave", function () {
+        //   magnifying_img.style.transform = "translate(-50%,-50%) scale(1)";
+        // });
+    });
+    myApp.controller("aboutCtrl", function ($scope) { });
+
+</script>
+
+</html>
