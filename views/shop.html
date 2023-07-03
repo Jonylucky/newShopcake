@@ -93,10 +93,9 @@
             </div>
             <div class="shop-card wd-76 s-full-width">
                 <div class="product-content">
-                    <div class="wd-thir  s-col-full" ng-repeat=" item in dataProduct | 
-filter:{'type':type||filter}| filter:{'egg':egg} |filter:{'name':name}|  limitTo : pageSize">
-
-                        <div class="box-product">
+                    <div class="wd-thir s-col-full" ng-repeat=" item in dataProduct | 
+                    filter:{'type':type||filter}| filter:{'egg':egg} |filter:{'name':name}|  limitTo : pageSize">
+                        <div class="box-product ">
                             <div class=" product-icon ">
                                 <div class="box-icon">
                                     <a href="" class="icon-link"> <i class="fa-solid fa-heart "></i></a>
@@ -109,7 +108,7 @@ filter:{'type':type||filter}| filter:{'egg':egg} |filter:{'name':name}|  limitTo
                             <ol class="box-list">
                                 <li class="box-item">
                                     <div class="box-item__img" style="background-image: url('{{item.image}}');
-            height: 214px;">
+           ">
                                 </li>
                                 <li class="box-item">
                                     <h3>{{item.name}}</h3>

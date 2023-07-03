@@ -18,6 +18,9 @@
 }
 /* tablet and mobile */
 @media (max-width: 63.9375em) {
+  .box-category  h3 {
+    font-size: calc(2rem + 0.6vw);
+}
   .nav {
    
     width: 100%;
@@ -42,7 +45,16 @@
     width: 100% ;
       }
       
-      
+      /*shop card  */
+      .shop-card{
+            padding: 0;
+      }
+      /* detail */
+      .container-detail {  
+        width: 70%;
+        margin: auto;
+    }
+   
    /* nav sidebar */
    .nav-sidebar {
     width: 100%;
@@ -112,31 +124,45 @@ display: none;
     white-space: nowrap;
   }
   .btn {
-    width: 100%;
-    display: flex;
-    width: 100%;
+   
+
+   
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6.6rem;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
   
+  .btn-shopnow{
+    width: 68%;
+  }
+  .nav-btn__close{
+    margin: 6px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 0.5rem 1rem;
+    background-color: var(--brown);
+    height: 7rem;
+    width: 7rem;
+    font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  }
+  /* banner */
+  .banner-content h3 {
+  
+    font-size: 2rem;
 }
-.nav-btn__close{
-  margin: 6px;
-  color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 0.5rem 1rem;
-  background-color: var(--brown);
-  height: 7rem;
-  width: 7rem;
-  font-size: 6rem;
-display: flex;
-align-items: center;
-justify-content: center;
+.banner-content span {
 
-
-
+  font-size: 2.4rem;
+}
+  .box-product{
+  margin-top: 12px;
+  }
 }
 /* tablet */
 @media (max-width: 63.9375em) and (min-width: 46.25em) {
@@ -185,7 +211,20 @@ justify-content: center;
   .product-link__type {
     font-size: 3rem;
 }
- 
+.box-item__img{
+  height: 314px;
+}
+ /* detail */
+ .driver-card{
+  width: 24%;
+  }
+  .span-product {
+    font-size: 1.8rem;
+}
+.p-product {
+  font-size: 1.6rem;
+  
+}
 }
 /* mobile */
 @media (max-width: 46.1875em) {
@@ -202,6 +241,15 @@ justify-content: center;
   font-size: 4rem;
 
 
+}
+/* detail */
+
+.container-detail {  
+  width: 100%;
+ 
+}
+.driver-card{
+width: 100%;
 }
     /* product shop resposive */
     .product-link__type {
