@@ -231,14 +231,15 @@ display: none;
   /* btn nav */
   .nav-btn {
     
-    width: 5rem;
-    font-size: 4rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
    
 }
 .nav-btn__close{
-  width: 5rem;
-  height: 5rem;
-  font-size: 4rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
 
 
 }
@@ -255,10 +256,7 @@ width: 100%;
     .product-link__type {
         font-size: 2rem;
     }
-    .nav-btn__close {
-      font-size: 6rem;
-      color: rgb(255, 255, 255);
-  }
+    
     .container-sidebar {
         width: 76%;
     
