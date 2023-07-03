@@ -142,9 +142,9 @@ display: none;
     color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.7) 0px 0.5rem 1rem;
     background-color: var(--brown);
-    height: 7rem;
-    width: 7rem;
-    font-size: 6rem;
+    height: 5rem;
+    width: 5rem;
+    font-size: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,7 +174,7 @@ display: none;
   font-size: 6rem;
 }
 .nav-btn{
-  font-size: 6rem;
+  font-size: 4rem;
   
 }
 
@@ -243,6 +243,15 @@ display: none;
 
 
 }
+/* carouisel */
+.content h3 {
+  font-size: 1.4rem;
+
+}
+.slide .content span {
+  color: #000;
+  font-size: 1.5rem;
+}
 /* detail */
 
 .container-detail {  
@@ -268,4 +277,16 @@ width: 100%;
   .s-mt-16 {
     margin-top: 8px !important;
   }
+  /* btn */
+  .btn {
+    height: 3.6rem;
+    font-size: 1.2rem;
+    width: 100%;
+}
+.banner-content span {
+  font-size: 1.6rem;
+}
+.banner-content h3 {
+  font-size: 1.4rem;
+}
 }
