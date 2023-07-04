@@ -166,7 +166,9 @@ display: none;
   line-height: 5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   border: 0.1rem solid rgba(0, 0, 0, 0.7);
-  text-align: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
   background: var(--brown);
   font-size: 2rem;
   color: #fff;
@@ -286,16 +288,13 @@ display: none;
   padding-top: 32px;
   flex-wrap: wrap;
 }
-.product-content {
-  
+.product-content {  
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
-
 }
 .box-product {
-  width: 100%;
+
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   position: relative;
