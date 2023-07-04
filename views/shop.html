@@ -92,45 +92,47 @@
                 </div>
             </div>
             <div class="shop-card wd-76 s-full-width">
-                <div class="product-content">
-                    <div class="wd-thir s-col-full" ng-repeat=" item in dataProduct | 
-                    filter:{'type':type||filter}| filter:{'egg':egg} |filter:{'name':name}|  limitTo : pageSize">
-                        <div class="box-product">
-                            <div class=" product-icon ">
-                                <div class="box-icon">
-                                    <a href="" class="icon-link"> <i class="fa-solid fa-heart "></i></a>
-                                    <a href="" class="icon-link"> <i class="fa-solid fa-cart-shopping "></i></a>
-                                    <a href="#!detail" class="icon-link" ng-click="saveData(item)"> <i
-                                            class="fa-solid fa-eye "></i></a>
+                <div class="container-product">
+                    <div class="product-content">
+                        <div class=" wd-for col-thir s-col-full pd-8" ng-repeat=" item in dataProduct  | limitTo :16 ">
+
+                            <div class=" box-product">
+
+                                <div class=" product-icon">
+                                    <div class="box-icon">
+                                        <a href="" class="icon-link"> <i class="fa-solid fa-heart "></i></a>
+                                        <a href="" class="icon-link"> <i class="fa-solid fa-cart-shopping "></i></a>
+                                        <a href="#!/detail" class="icon-link" ng-click="saveData(item)"> <i
+                                                class="fa-solid fa-eye "></i></a>
+                                    </div>
                                 </div>
+                                <ol class="box-list">
+                                    <li class="box-item">
+                                        <div class="box-item__img" style="background-image: url('{{item.image}}');
+                                    ">
+                                    </li>
+                                    <li class="box-item">
+                                        <h3>{{item.name}}</h3>
+                                    </li>
+                                    <li class="box-item">
+                                        <span>{{item.type}}</span>
+                                    </li>
+
+                                    <li class="box-item"><span>$ {{item.price}}</span></li>
+                                    <li class="box-item">
+                                        <ul class="list-icon">
+                                            <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                            <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                            <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                            <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                            <li class="item-icon"><i class="fa-solid fa-star"></i></li>
+                                        </ul>
+                                    </li>
+                                </ol>
                             </div>
-
-                            <ol class="box-list">
-                                <li class="box-item">
-                                    <div class="box-item__img" style="background-image: url('{{item.image}}');
-           ">
-                                </li>
-                                <li class="box-item">
-                                    <h3>{{item.name}}</h3>
-                                </li>
-                                <li class="box-item">
-                                    <span>{{item.type}}</span>
-                                </li>
-
-                                <li class="box-item"><span>$ {{item.price}}</span></li>
-                                <li class="box-item">
-                                    <ul class="list-icon">
-                                        <li class="item-icon"><i class="fa-solid fa-star"></i></li>
-                                        <li class="item-icon"><i class="fa-solid fa-star"></i></li>
-                                        <li class="item-icon"><i class="fa-solid fa-star"></i></li>
-                                        <li class="item-icon"><i class="fa-solid fa-star"></i></li>
-                                        <li class="item-icon"><i class="fa-solid fa-star"></i></li>
-                                    </ul>
-                                </li>
-                            </ol>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
