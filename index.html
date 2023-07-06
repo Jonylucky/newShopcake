@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="myApp" ng-cloak>
 
 <head>
     <meta charset="UTF-8">
@@ -88,19 +88,18 @@
                 <div class="container-sidebar">
 
                     <div class="search">
-                        <div class="box-map">
+                        <!-- <div class="box-map">
                             <iframe class="map"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.277428229037!2d106.64782024265908!3d10.786834253624187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2sin!4v1687748371132!5m2!1sen!2sin"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
+                        </div> -->
                         <ul class="list-search">
                             <li class="product-item__type item-search">
                                 <a class="product-link__type" href="#/!"><i
                                         class="fa-solid fa-house icon-active"></i>Home</a>
                             </li>
                             <li class="product-item__type item-search product-item__shop ">
-                                <a class="product-link__type" href="#!/shop"><i
-                                        class="fa-solid fa-shop icon-active"></i>Shop</a>
+                                <a class="product-link__type"><i class="fa-solid fa-shop icon-active"></i>Shop</a>
                                 <ol class="nav-list__product">
 
                                     <li class="item-search"><span class="span-title"> Price product</span>
@@ -111,18 +110,16 @@
                                         <span class="span-title">Type product</span>
                                         <ul class="product-list__type">
                                             <li class="product-item__type">
-                                                <a class="product-link__type" data-set="birthday"
-                                                    ng-click="getType('birthday')" value="birthday">Birthday</a>
+                                                <a class="product-link__type" n href="#!/shop/birthday">Birthday</a>
                                             </li>
                                             <li class="product-item__type"><a class="product-link__type"
-                                                    data-set="Marriage" ng-click="getType('Marriage')">Marriagey</a>
+                                                    ng-href="#!/shop/Marriage">Marriagey</a>
                                             </li>
                                             <li class="product-item__type"><a class="product-link__type"
-                                                    data-set="Anniversary"
-                                                    ng-click="getType('Anniversary')">Anniversary</a>
+                                                    href="#!/shop/Anniversary">Anniversary</a>
                                             </li>
-                                            <li class="product-item__type"><a class="product-link__type"
-                                                    data-set="gallsery" ng-click="getType('gallsery')">Gallsery</a>
+                                            <li class="product-item__type"><a href="#!/shop/gallsery"
+                                                    class="product-link__type">Gallsery</a>
                                             </li>
 
                                         </ul>
@@ -148,7 +145,7 @@
                                 </ol>
                             </li>
                             <li class="product-item__type item-search">
-                                <a class="product-link__type"><i
+                                <a class="product-link__type" href="#!/about"><i
                                         class="fa-solid fa-address-card icon-active"></i>About</a>
                             </li>
                             <li class="product-item__type item-search">
@@ -159,7 +156,7 @@
                                 <a class="product-link__type"><i class="fa-solid fa-blog icon-active"></i>Blog</a>
                             </li>
                             <li class="product-item__type item-search">
-                                <a class="product-link__type "><i
+                                <a class="product-link__type" href="#!/contact"><i
                                         class="fa-solid fa-address-book icon-active"></i>Contact</a>
                             </li>
                             <li class="product-item__type item-search">
@@ -261,8 +258,8 @@
                 templateUrl: "views/home.html",
                 controller: "homeCtrl",
             })
-            .when("/shop", {
-                templateUrl: "views/shop.html",
+            .when("/shop/:nameProduct", {
+                templateUrl: "views/shop.html?" + Math.random()
 
             })
             .otherwise({
@@ -301,7 +298,7 @@
         function setTypeProduct(type) {
             saveType = type;
         }
-        function getTypeproduct() {
+        function getTypeProduct() {
             return saveType;
         }
 
@@ -309,20 +306,10 @@
             set: set,
             get: get,
             setTypeProduct: setTypeProduct,
-            getTypeproduct: getTypeproduct,
+            getTypeProduct: getTypeProduct,
         };
     });
-    // nav constroller
-    myApp.controller("navCtrl", function ($scope) {
-        $scope.showNavbar = function () {
-            $(".nav").hide();
-            $(".nav-sidebar").show();
-        };
-        $scope.hidenNavbar = function () {
-            $(".nav").show();
-            $(".nav-sidebar").hide();
-        };
-    });
+
     // home controller
     myApp.controller("homeCtrl", function ($scope, myService) {
         let fade = document.querySelectorAll(".fade");
@@ -347,25 +334,45 @@
         // save type to myserevice
         $scope.saveType = function (type) {
             myService.setTypeProduct(type);
+
         };
     });
-    // shop controller
-    myApp.controller("shopCtrl", function ($scope, myService) {
-        // get type from myservice
-        $scope.typeProduct = myService.getTypeproduct();
-        console.log($scope.dataProduct);
-        // get data from filr json
+    // nav constroller
+    myApp.controller("navCtrl", function ($scope, myService) {
+        $scope.showNavbar = function () {
+            $(".nav").hide();
+            $(".nav-sidebar").show();
+        };
+        $scope.hidenNavbar = function () {
+            $(".nav").show();
+            $(".nav-sidebar").hide();
+        };
+        // save type to myService
+        $scope.saveType = function (type) {
 
-        // varible nagination page
+            myService.setTypeProduct(type);
+
+        };
+        // get typeproduct
+
+    });
+    // shop controller
+    myApp.controller("shopCtrl", function ($scope, $routeParams, myService) {
+        // get type from myservice
+
+
+        $scope.filter = myService.getTypeProduct() || $routeParams.nameProduct;
+
+
+
 
         ($scope.currentPage = 1), ($scope.pageSize = 12);
 
-        // get type from myservice
 
-        $scope.filter = $scope.typeProduct;
+
         console.log($scope.filter);
+
         $scope.getType = function (typeProduct) {
-            console.log(typeProduct);
             $scope.type = typeProduct;
         };
         $scope.orderfilEgg = function (egg) {
@@ -385,7 +392,9 @@
     });
 
     // contact controller
-    myApp.controller("contactCtrl", function ($scope) { });
+    myApp.controller("contactCtrl", function ($scope) {
+
+    });
     // detail controller
     myApp.controller("detailCtrl", function ($scope, myService) {
         // get  data from myservice
