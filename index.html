@@ -56,7 +56,7 @@
                         <ul class="nav-list">
                             <li class="nav-item"><a href="#/!" class="nav-link">Home</a></li>
 
-                            <li class="nav-item"><a href="#!/shop" class="nav-link">Shop</a></li>
+                            <li class="nav-item"><a href="#!/shop/shop" class="nav-link">Shop</a></li>
 
                             <li class="nav-item"><a href="
                                 #!about" class="nav-link">About</a></li>
@@ -99,7 +99,8 @@
                                         class="fa-solid fa-house icon-active"></i>Home</a>
                             </li>
                             <li class="product-item__type item-search product-item__shop ">
-                                <a class="product-link__type"><i class="fa-solid fa-shop icon-active"></i>Shop</a>
+                                <a class="product-link__type" href="#!/shop/shop"><i
+                                        class="fa-solid fa-shop icon-active"></i>Shop</a>
                                 <ol class="nav-list__product">
 
                                     <li class="item-search"><span class="span-title"> Price product</span>
@@ -332,10 +333,7 @@
             myService.set(data);
         };
         // save type to myserevice
-        $scope.saveType = function (type) {
-            myService.setTypeProduct(type);
 
-        };
     });
     // nav constroller
     myApp.controller("navCtrl", function ($scope, myService) {
@@ -358,10 +356,8 @@
     });
     // shop controller
     myApp.controller("shopCtrl", function ($scope, $routeParams, myService) {
-        // get type from myservice
-
-
-        $scope.filter = myService.getTypeProduct() || $routeParams.nameProduct;
+        // get param product
+        $routeParams.nameProduct == "shop" ? $scope.filter = "" : $scope.filter = myService.getTypeProduct() || $routeParams.nameProduct;
 
 
 
@@ -369,7 +365,7 @@
         ($scope.currentPage = 1), ($scope.pageSize = 12);
 
 
-
+        console.log($routeParams.nameProduct)
         console.log($scope.filter);
 
         $scope.getType = function (typeProduct) {
