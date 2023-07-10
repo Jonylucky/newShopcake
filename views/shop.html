@@ -94,9 +94,9 @@
                 <div class="container-product">
                     <div class="product-content">
                         <div class=" wd-thir col-thir s-col-full pd-8"
-                            ng-repeat=" item in dataProduct| filter:{'type':filter}||filter:{'type':filter} | limitTo :pageSize">
+                            ng-repeat=" item in dataProduct| filter:{'type':type}|filter:{'type':filter}|filter:paginationFilter track by $index ">
 
-                            <div class=" box-product">
+                            <div class="box-product">
 
                                 <div class=" product-icon">
                                     <div class="box-icon">
@@ -134,10 +134,14 @@
 
                     </div>
                 </div>
+
             </div>
         </div>
-        <div id="pagebar" class="numberbar">
 
-        </div>
 
     </div>
+    <div id="pagebar" class="numberbar" ng-repeat="page in pages">
+        <h1>{{page}}laalala</h1>
+    </div>
+
+</div>

@@ -14,13 +14,17 @@
     display: none !important;
       
     }
-  
+    
+
 }
 /* tablet and mobile */
 @media (max-width: 63.9375em) {
   .box-category  h3 {
     font-size: calc(2rem + 0.6vw);
 }
+.product-list__type{
+  display: block;
+  }
   /* .nav {
    
     width: 100%;
@@ -28,6 +32,7 @@
     height: 80px;
     display: flex;
 } */
+
 nav {
  
   height: 60px;
