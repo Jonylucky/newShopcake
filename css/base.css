@@ -169,11 +169,14 @@ output {
     padding: 8px 0;
 
 }
+.pd-left{
+    padding-left: 16px;
+}
 
 .pd-16 {
     padding: 16px 0;
 }
-l
+
 
 .bd-bottom {
     border-bottom: 1px solid #ccc;

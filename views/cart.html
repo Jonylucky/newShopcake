@@ -5,49 +5,62 @@
 
             <div class="wd-haft s-full-width">
                 <div class="cart-card">
-                    <ul class="cart-list">
-                        <li class="cart-item__img">Image</li>
+                    <ul class="cart-list_head">
+                        <li class="cart-item__img pd-left">Image</li>
                         <li class="cart-item_name">
                             Name Product
                         </li>
                         <li class="cart-item">Quanttily</li>
                         <li class="cart-item">Size</li>
                         <li class="cart-item">Price</li>
-                        <li class="cart-item">Action</li>
+                        <li class="cart-item">Total</li>
+                        <li class="cart-item"></li>
 
                     </ul>
                 </div>
-                <div class="cart-card">
+                <div class="cart-card" ng-repeat="item in listCart track by $index" ng-init="item.amount = 1">
                     <ul class="cart-list">
-                        <li class="cart-item__img"><img class="cart__img" src="../images/cat-5.jpg" alt=""></li>
+                        <li class="cart-item__img"><img class="cart__img" src="{{item.image}}" alt=""></li>
                         <li class="cart-item_name">
-                            Ormari Sed Consequat
+                            {{item.name}}
                         </li>
-                        <li class="cart-item">1</li>
-                        <li class="cart-item">Medium</li>
-                        <li class="cart-item">19</li>
-                        <li class="cart-item"><button href="" class="table-cart__btn">Delete<i
-                                    class="fa-solid fa-trash"></i></button></li>
-
-                    </ul>
-                </div>
-                <div class="cart-card">
-                    <ul class="cart-list">
-                        <li class="cart-item__img"><img class="cart__img" src="../images/cat-5.jpg" alt=""></li>
-                        <li class="cart-item_name">
-                            Ormari Sed Consequat
+                        <li class="cart-item active-input"><input type="number" min="1" ng-model="item.amount">
                         </li>
-                        <li class="cart-item">1</li>
-                        <li class="cart-item">Medium</li>
-                        <li class="cart-item">19</li>
-                        <li class="cart-item"><button href="" class="table-cart__btn">Delete<i
-                                    class="fa-solid fa-trash"></i></button></li>
+                        <li class="cart-item">{{item.descript.weight}}</li>
+                        <li class="cart-item">{{item.price}}$</li>
+                        <li class="cart-item">{{item.price * item.amount }}$</li>
 
+
+
+                        <li class="cart-item"><a class="cart-item_link" ng-click="removeItem(item)">Remove</a></li>
                     </ul>
+
                 </div>
 
             </div>
+
             <div class="wd-haft s-full-width">
+                <div class="total-product">
+                    <ul class="total-product__list">
+                        <li class="total-product__head"><a href="" class="btn-continue btn">Continue
+                                to checkout</a>
+
+                            <div class="head__total">For the best shopping experience,<a href="">sing
+                                    in</a></div>
+
+                        </li>
+
+                        <li class="total-product__item"><span class="suptotal">Suptotal : {{totalOrder()}}$</span> </li>
+                        <li class="total-product__item"><span>Shipping</span><span>Free</span></li>
+
+                        <li class="total-product__item"><span>Select delivery or pickup to view fees</span>
+                            <a>Select</a>
+                        </li>
+                        <li class="total-product__item"><span>Taxes</span><span>Calculated at checkout</span></li>
+
+                    </ul>
+                </div>
+                <!-- 
                 <form action="" class="addcard s-full-width">
                     <div class="container-detail-content ">
                         <span class="span-detail">Usec Sans</span>
@@ -142,7 +155,7 @@
                             to
                             card</button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
 

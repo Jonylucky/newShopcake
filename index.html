@@ -314,6 +314,8 @@
     myApp.factory("myService", function () {
         var savedData = {};
         var saveType = "";
+        var listCart = [];
+
         // set data product
         function set(data) {
             savedData = data;
@@ -322,6 +324,15 @@
             return savedData;
         }
 
+
+        // set list cart 
+        function setListCart(item) {
+            listCart.push(item)
+        }
+        // get list cart
+        function getListCart() {
+            return listCart;
+        }
         // save type product
         function setTypeProduct(type) {
             saveType = type;
@@ -333,8 +344,14 @@
         return {
             set: set,
             get: get,
+
             setTypeProduct: setTypeProduct,
             getTypeProduct: getTypeProduct,
+
+            //  myservice list cart
+            setListCart: setListCart,
+            getListCart: getListCart
+
         };
     });
 
@@ -452,6 +469,11 @@
         // range input change background by price
 
         // filter product from data
+
+        // function set list cart 
+        $scope.setItemListCart = function (item) {
+            myService.setListCart(item)
+        }
     });
 
     // contact controller
@@ -515,7 +537,45 @@
     myApp.controller("blogCtrl", function ($scope) {
 
     })
-    myApp.controller("cartCtrl", function ($scope) {
+    myApp.controller("cartCtrl", function ($scope, myService) {
+
+        // get list cart 
+        let list = [];
+        list = myService.getListCart();
+
+        let myArrayWithNoDuplicates = list.reduce(function (accumulator, element) {
+            if (accumulator.indexOf(element) === -1) {
+                accumulator.push(element)
+            }
+            return accumulator
+        }, [])
+
+
+
+        console.log(myArrayWithNoDuplicates)
+
+
+
+        $scope.listCart = myArrayWithNoDuplicates;
+
+        // total order
+        $scope.totalOrder = function () {
+
+            var total = 0;
+            myArrayWithNoDuplicates.forEach(element => {
+                total += element.price * element.amount;
+            });
+            return total;
+        }
+        // remover item cart
+        $scope.removeItem = function (item) {
+            myArrayWithNoDuplicates.forEach((element, index) => {
+                if (element.id == item.id) {
+                    myArrayWithNoDuplicates.splice(index, 1);
+                }
+            });
+
+        }
 
     })
 
