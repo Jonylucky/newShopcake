@@ -1,0 +1,55 @@
+<div class="container-cart" ng-controller="loginCtrl">
+    <div class="bg-shop"></div>
+    <div class="container pd-16">
+        <div class="container-product">
+            <div class="head">
+                <h1> Registration Form</h1>
+            </div>
+            <div class="box-touch">
+                <form name="touch" action="#!user">
+                    <div class="info">
+                        <input type="email" class="info-email wd-full" placeholder="Enter your email" ng-model="email"
+                            id="email" name="email" required />
+                    </div>
+                    <div class="info">
+                        <input type="text" class="info-number wd-full " placeholder="Enter your password"
+                            ng-model="password" id="password" name="password" required />
+                        <a href="#">
+                            <h3>Forgot your password?</h3>
+                        </a>
+                    </div>
+                    <input type="submit" class="btn wd-haft" value="Login" ng-click="login(email,password)">
+                    <a href="#!register" type="cancel" class="btn wd-haft">Sign
+                        up</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-driver">c
+        <div class="container driver">
+
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>SAME DAY CAKE DELIVERY ON
+                    ORDERS BEFORE 3PM (MON-FRI)</span>
+            </div>
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-clock"></i>
+                <span>CHOOSE YOUR PREFERRED
+                    DELIVERY SLOT</span>
+            </div>
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-user-secret"></i>
+                <span>CAKES FROM BEST
+                    RATED LOCAL BAKERS</span>
+            </div>
+            <div class="wd-for driver-card">
+                <i class="fa-solid fa-cake-candles"></i>
+                <span>FINEST SELECTION
+                    OF CAKES</span>
+            </div>
+        </div>
+    </div>
+
+</div>

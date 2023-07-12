@@ -94,7 +94,8 @@
                             <li class="info-item"><a class="info-link" href="#!/cart"> <i
                                         class="fa-solid fa-cart-shopping"></i></a>
                             </li>
-                            <li class="info-item"><a class="info-link"><i class="fa-solid fa-user"></i></a></li>
+                            <li class="info-item"><a class="info-link" href="#!/user"><i
+                                        class="fa-solid fa-user"></i></a></li>
 
                         </ul>
                     </div>
@@ -303,6 +304,12 @@
                 templateUrl: "views/detail.html",
                 controller: "detailCtrl",
             })
+            .when("/login", {
+                templateUrl: "views/login.html",
+            })
+            .when("/user", {
+                templateUrl: "views/user.html",
+            })
     });
     myApp.run(function ($rootScope, $http) {
         $http.get("./data/data.json").then(function (response) {
@@ -315,6 +322,9 @@
         var savedData = {};
         var saveType = "";
         var listCart = [];
+        var orderCart = [];
+        var user = [];
+        var orderList = [];
 
         // set data product
         function set(data) {
@@ -341,6 +351,31 @@
             return saveType;
         }
 
+        //login 
+        function loginUser(email, password, listUser) {
+            var check = false;
+            const checkMail = listUser.findIndex((obj) => obj.email === email);
+            const checkPass = listUser.findIndex((obj) => obj.password === password);
+
+            if (checkMail > -1 && checkPass > -1) {
+                check = true;
+                user.push(listUser.find(x => x.email === email));
+                return user;
+            }
+        }
+
+        function getUser() {
+            return user;
+        }
+
+        function logoutUser(data) {
+            const objWithIdIndex = user.findIndex((obj) => obj.id === data.id);
+            if (objWithIdIndex > -1) {
+                user.splice(objWithIdIndex, 1);
+            }
+            return user;
+        }
+
         return {
             set: set,
             get: get,
@@ -350,7 +385,12 @@
 
             //  myservice list cart
             setListCart: setListCart,
-            getListCart: getListCart
+            getListCart: getListCart,
+
+            // login/logout user
+            loginUser: loginUser,
+            getUser: getUser,
+            logoutUser: logoutUser
 
         };
     });
@@ -578,6 +618,29 @@
         }
 
     })
+
+    /** 
+     * LOGIN CONTROLLER 
+     * **/
+
+    myApp.controller("loginCtrl", function ($scope, myService, $http) {
+        $http.get("./data/user.json").then(function (response) {
+            $scope.listUser = response.data.details;
+        });
+
+        // login
+        $scope.login = function (email, password) {
+            myService.loginUser(email, password, $scope.listUser);
+        };
+
+        // get user
+        $scope.getUser = myService.getUser();
+
+        //logout
+        $scope.logout = function (data) {
+            myService.logoutUser(data);
+        };
+    });
 
 </script>
 
