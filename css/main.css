@@ -1117,7 +1117,92 @@ padding-top: 8px;
  left: 0;
  
 }
+/* login page */
+.continer-login-from{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.login-form{
+  width:40%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  padding: 16px;
+
+}
+.list-input{
+list-style: none;
+width: 100%;
+padding: 0;
+text-align: center;
+padding: 8px 0;
+}
+.item-input a{
+  width: 100%;
+ 
+}
+.item-input span{
+  color: #ffff;
+  font-size: 1.6rem;
+  
+}
+.item-input  i{
+  padding-right: 8px;
+}
+.btn-google{
+  background-color: #be252c;
+}
+.btn-github{
+background-color: #390b0d;
+}
+.btn-twiter{
+background-color: #2596be;
+}
+/* user page */
+.nav-slider__user{
+  width: 25%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  height: 100%;
+
+}
+.user-list{
+list-style: none;
+padding: 0;
+}
+.user-item{
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+.user-item img{
+width: 100%;
+object-fit: cover;
+}
+.user-item span{
+  font-size: 1.6rem;
+  padding: 4px 0;
+  color: #ffff;
+
+}
+.user-item a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ffff;
+  padding: 4px 0;
+
+}
+.user-item h3{
+  color: #fff;
+  font-size: 2rem;
+}
+.user-item i{
+  padding-right: 8px;
+}
+.user-item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  background-color: var(--brown);
+}
+/* ==========foodter===========  */
 .footer .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

@@ -3,6 +3,7 @@
     {
       "id": "1",
       "name": "Nguyễn Vân Phụng",
+      "avata":"../images/pic-6.png",
       "dob": "03/12/1997",
       "address": "590 Đ. Cách Mạng Tháng 8, Phường 11, Quận 3, Thành phố Hồ Chí Minh 723564, Vietnam",
       "phone": "(+84) 123456789",
@@ -14,30 +15,33 @@
       "id": "2",
       "name": "Tạ Hải Lượng",
       "dob": "03/12/1997",
+      "avata":"../images/pic-5.png",
       "address": "590 Đ. Cách Mạng Tháng 8, Phường 11, Quận 3, Thành phố Hồ Chí Minh 723564, Vietnam",
       "phone": "(+84) 123456789",
       "email": "luong@gmail.com",
-      "password": "123",
+      "password": "456",
       "gender": "male"
     },
     {
       "id": "3",
       "name": "Nguyễn Khánh Danh",
+      "avata":"../images/pic-3.png",
       "dob": "03/12/1997",
       "address": "590 Đ. Cách Mạng Tháng 8, Phường 11, Quận 3, Thành phố Hồ Chí Minh 723564, Vietnam",
       "phone": "(+84) 123456789",
       "email": "danh@gmail.com",
-      "password": "123",
+      "password": "789",
       "gender": "male"
     },
     {
       "id": "4",
       "name": "Nguyễn Tất Thiên",
+      "avata":"../images/pic-2.png",
       "dob": "03/12/1997",
       "address": "590 Đ. Cách Mạng Tháng 8, Phường 11, Quận 3, Thành phố Hồ Chí Minh 723564, Vietnam",
       "phone": "(+84) 123456789",
       "email": "thien@gmail.com",
-      "password": "123",
+      "password": "111",
       "gender": "male"
     },
     {
@@ -47,7 +51,7 @@
       "address": "590 Đ. Cách Mạng Tháng 8, Phường 11, Quận 3, Thành phố Hồ Chí Minh 723564, Vietnam",
       "phone": "(+84) 123456789",
       "email": "khanh@gmail.com",
-      "password": "123",
+      "password": "222",
       "gender": "male"
     }
   ]

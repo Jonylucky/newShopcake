@@ -323,7 +323,7 @@
         var saveType = "";
         var listCart = [];
         var orderCart = [];
-        var user = [];
+        var user = {};
         var orderList = [];
 
         // set data product
@@ -352,16 +352,8 @@
         }
 
         //login 
-        function loginUser(email, password, listUser) {
-            var check = false;
-            const checkMail = listUser.findIndex((obj) => obj.email === email);
-            const checkPass = listUser.findIndex((obj) => obj.password === password);
-
-            if (checkMail > -1 && checkPass > -1) {
-                check = true;
-                user.push(listUser.find(x => x.email === email));
-                return user;
-            }
+        function loginUser(element) {
+            user = element
         }
 
         function getUser() {
@@ -624,23 +616,48 @@
      * **/
 
     myApp.controller("loginCtrl", function ($scope, myService, $http) {
+        var listUser = [];
+        var user = {
+            email: "",
+            password: ""
+        }
         $http.get("./data/user.json").then(function (response) {
-            $scope.listUser = response.data.details;
+            listUser = response.data.details
+
+
         });
 
+
         // login
-        $scope.login = function (email, password) {
-            myService.loginUser(email, password, $scope.listUser);
+        console.log(listUser);
+
+
+        $scope.login = function () {
+            console.log(listUser)
+            user.email = $scope.email;
+            user.password = $scope.password;
+            console.log(user)
+            let item = listUser.filter((el) => el.password == user.password);
+            console.log(item);
+            myService.loginUser(item);
+            $("#to-user").attr('href', '#!/user')
         };
 
         // get user
-        $scope.getUser = myService.getUser();
+
 
         //logout
         $scope.logout = function (data) {
             myService.logoutUser(data);
         };
     });
+    // controoler userCrtl
+
+    myApp.controller("userCtrl", function ($scope, myService) {
+        // get my service  user
+        $scope.items = myService.getUser();
+        console.log($scope.items)
+    })
 
 </script>
 

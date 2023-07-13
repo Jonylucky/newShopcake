@@ -1,61 +1,29 @@
-<div class="container-cart" ng-controller="loginCtrl">
+<div class="container-user" ng-controller="userCtrl">
     <div class="bg-shop"></div>
-    <div class="container pd-16">
-        <div class="container-product">
+    <nav class="nav-slider__user" ng-repeat="item in items track by $index">
+        <ul class="user-list">
+            <li class="user-item"><img src={{item.avata}} alt=""></li>
+            <li class="user-item">
+                <h3>Welcome {{item.name}}</h3>
+            </li>
+            <li class="user-item"> <span>Dob : {{item.dob}}</span></li>
+            <li class="user-item"><span> Email : {{item.email}}</span></li>
+            <li class="user-item"><span> Phone : {{item.phone}}</span></li>
+            <li class="user-item"><span> Address : {{item.address}}</span></li>
+            <li class="user-item"> <a href="#!shop" class=""><i class="fa-solid fa-cloud"></i>
+                    History</a></li>
+            <li class="user-item"> <a href="#!shop" class=""><i class="fa-solid fa-gear"></i></i>Setting</a></li>
+            <li class="user-item"> <a href="#!shop" class=""><i class="fa-solid fa-bag-shopping"></i>Continue
+                    Shopping</a></li>
+            <li class="user-item"><a href="#!shop" ng-click="logout(item)"><i
+                        class="fa-solid fa-right-from-bracket"></i>Log out</a></li>
 
-            <div class="blog-img">
-                <div class="image">
-                    <img src="../images/pic-6.png" alt="">
-                </div>
-                <div class="content-param bd-bottom pd-8" ng-repeat=" item in getUser ">
-                    <div class="blog-detail">
-                        <div class="read-more-container"></div>
-                        <h2 class="blog-detail-h2">Welcome {{item.name}}</h2>
-                        Gender :
-                        <h4 style="color: black;">{{item.gender}}</h4>
-                        Day of birth :
-                        <h4 style="color: black;">{{item.dob}}</h4>
-                        Email :
-                        <h4 style="color: black;">{{item.email}}</h4>
-                        Phone number :
-                        <h4 style="color: black;">{{item.phone}}</h4>
-                        Address :
-                        <h4 style="color: black;">{{item.address}}</h4>
-                        <a href="#!shop" class="btn content-add" style="width: 100%;margin: 16px 0;">Continue
-                            Shopping</a>
-                        <a href="#!shop" ng-click="logout(item)" class="btn content-add"
-                            style="width: 100%;margin: 16px 0;">Log out</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+        </ul>
+    </nav>
+
 </div>
 
 
-<div class="footer-driver">
-    <div class="container driver">
 
-        <div class="wd-for driver-card">
-            <i class="fa-solid fa-truck-fast"></i>
-            <span>SAME DAY CAKE DELIVERY ON
-                ORDERS BEFORE 3PM (MON-FRI)</span>
-        </div>
-        <div class="wd-for driver-card">
-            <i class="fa-solid fa-clock"></i>
-            <span>CHOOSE YOUR PREFERRED
-                DELIVERY SLOT</span>
-        </div>
-        <div class="wd-for driver-card">
-            <i class="fa-solid fa-user-secret"></i>
-            <span>CAKES FROM BEST
-                RATED LOCAL BAKERS</span>
-        </div>
-        <div class="wd-for driver-card">
-            <i class="fa-solid fa-cake-candles"></i>
-            <span>FINEST SELECTION
-                OF CAKES</span>
-        </div>
-    </div>
-</div>
 </div>
