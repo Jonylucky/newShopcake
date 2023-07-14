@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Nguyễn Vân Phụng",
-      "avata":"../images/pic-6.png",
+      "avata":"./images/pic-6.png",
       "dob": "03/12/1997",
       "address": "590 Đ. Cách Mạng Tháng 8, Phường 11, Quận 3, Thành phố Hồ Chí Minh 723564, Vietnam",
       "phone": "(+84) 123456789",
