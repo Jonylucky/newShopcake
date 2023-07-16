@@ -1243,6 +1243,7 @@ object-fit: cover;
   color: #000;
   padding: 1rem 0;
   display: block;
+  text-decoration: none;
 }
 
 .footer .box-container .box a:hover {
