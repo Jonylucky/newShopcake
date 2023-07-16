@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="./css/responsive.css">
 
     <!--   script  jquery  -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <!-- script angular -->
     <script type="application/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
@@ -124,9 +127,13 @@
                                         class="fa-solid fa-shop icon-active"></i>Shop</a>
                                 <ol class="nav-list__product">
 
-                                    <li class="item-search"><span class="span-title"> Price product</span>
-                                        <input type="range" min="0" max="100" oninput="rangevalue.value=value +'$'" />
-                                        <output id="rangevalue">50$</output>
+                                    <li class="item-search"><span class="span-title">
+                                            <p>
+                                                <label for="amount">Price range:</label>
+                                                <input type="text" id="amount" readonly>
+                                            </p>
+
+                                            <div id="slider-range"></div>
                                     </li>
                                     <li class="item-search ">
                                         <span class="span-title">Type product</span>
@@ -386,7 +393,56 @@
 
         };
     });
+    myApp.filter("myFilter", function () {
+        return function (items, search) {
+            if (!search) {
+                return items
+            }
+            var type = search
+            if (!type || "shop" == type) {
+                return items
+            }
+            // if (priceMax != 0 && priceMin != 0) {
+            //     console.log(priceMax)
 
+
+            //     return items.filter(function (element, index) {
+            //         return (element.price > priceMin && element.price < priceMax)
+            //     })
+            // }
+
+            if (search == "no" || search == "with") {
+                return items.filter(function (element, index) {
+                    console.log(search)
+                    return element.egg == search
+                })
+            }
+
+            return items.filter(function (element, index) {
+                return element.type == search
+            });
+
+        }
+
+    });
+    // filte price 
+    myApp.filter('rangePrice', function () {
+        return function (items, rangePrice) {
+            var filteredValue = [];
+            var toPrice = rangePrice.toPrice != undefined ? parseInt(rangePrice.toPrice) : 1;
+            var fromPrice = rangePrice.fromPrice != undefined ? parseInt(rangePrice.fromPrice) : 100;
+            angular.forEach(items, function (item) {
+                console.log(item.price)
+                console.log(fromPrice)
+
+                if (item.price >= toPrice) {
+                    filteredValue.push(item);
+
+                }
+            });
+            return filteredValue;
+        };
+    })
     // home controller
     myApp.controller("homeCtrl", function ($scope, myService) {
         let fade = document.querySelectorAll(".fade");
@@ -430,82 +486,94 @@
         // get typeproduct
 
     });
+    // app custommer filter
+
     // shop controller
     myApp.controller("shopCtrl", function ($scope, $routeParams, myService) {
-        // get param product
-        $routeParams.nameProduct == "shop" ? $scope.filter = "" : $scope.filter = myService.getTypeProduct() || $routeParams.nameProduct;
 
 
 
 
 
-        console.log($routeParams.nameProduct)
-        console.log($scope.filter);
-        $(".box-list").click(function () {
-            console.log("test")
-        })
 
-        $scope.getType = function (typeProduct) {
-            $scope.type = typeProduct;
-        };
-        $scope.orderfilEgg = function (egg) {
-            $scope.egg = egg;
-        };
-
+        $scope.prop = $routeParams.nameProduct;
         //pagination product
-        // $scope.curPage = 1,
-        //     $scope.itemsPerPage = 12,
-        //     $scope.maxSize = 5;
+        $scope.begin = 0;
+        $scope.pageSize = 12;
+        $scope.pageCount = Math.ceil($scope.dataProduct.length / $scope.pageSize);
 
-        $scope.pagination = {
-            currentPage: 1,
-            numPerPage: 12,
-            totalItems: 0
-        };
+        $scope.first = function () {
+            $scope.begin = 0
+        }
+        $scope.previous = function () {
+            if ($scope.begin > 0) {
+                $scope.begin -= $scope.pageSize;
+            }
+        }
+        $scope.next = function () {
+            if ($scope.begin < ($scope.pageSize - 1) * $scope.pageSize) {
+                $scope.begin += $scope.pageSize
+            }
+        }
+        $scope.last = function () {
 
-        $scope.searchFilter = function (item) {
-            //Your filter results will be paginated!
-            //The pagination will work even with other filters involved
-            //The total number of items in the result of your filter is accounted for
-        };
+            $scope.begin = ($scope.pageSize - 1) * $scope.pageSize
+        }
+        $scope.sortBy = function (prop) {
+            $scope.prop = prop;
+        }
 
-        $scope.paginationFilter = function (item, index) {
-            //Every time the filter is used it restarts the totalItems
-            if (index === 0)
-                $scope.pagination.totalItems = 0;
 
-            //This holds the totalItems after the filters are applied
-            $scope.pagination.totalItems++;
+        // range input change background by price
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 200,
+            values: [1, 100],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
 
-            if (
-                index >= (($scope.pagination.currentPage - 1) * $scope.pagination.numPerPage)
-                && index < ((($scope.pagination.currentPage - 1) * $scope.pagination.numPerPage) + $scope.pagination.numPerPage)
-            )
-                return true; //return true if item index is on the currentPage
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+            " - $" + $("#slider-range").slider("values", 1));
 
-            return false;
-        };
-        // numpage product
-        $scope.numOfPages = function () {
-            return Math.ceil($scope.dataProduct.length / $scope.pagination.numPerPage);
 
-        };
-        $scope.pages = $scope.numOfPages()
-        console.log($scope.numOfPages());
+        $("#slider-range-shop").slider({
+            range: true,
+            min: 0,
+            max: 200,
+            values: [1, 100],
+            slide: function (event, ui) {
+                $("#amount-shop").val("$" + ui.values[0] + " - $" + ui.values[1]);
+
+                $scope.to_price = ui.values[0];
+                $scope.from_price = ui.values[1];
+
+            }
+        });
+        $("#amount-shop").val("$" + $("#slider-range-shop").slider("values", 0) +
+            " - $" + $("#slider-range-shop").slider("values", 1));
+
+
+
 
         // save item data  myservice
         $scope.saveData = function (item) {
             myService.set(item);
         };
 
-        // range input change background by price
 
-        // filter product from data
+
+
 
         // function set list cart 
         $scope.setItemListCart = function (item) {
             myService.setListCart(item)
         }
+
+
+
     });
 
     // contact controller

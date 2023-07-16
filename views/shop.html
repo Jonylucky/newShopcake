@@ -16,29 +16,34 @@
                             </div>
                             <ul class="list-search">
                                 <li class="product-item__type item-search"><span class="span-title"> Product</span>
-                                    <a class="product-link__type" ng-model="type" ng-click="orderfil()">All
+                                    <a class="product-link__type" ng-model="type" ng-click="sortBy()">All
                                         Product</a>
                                 </li>
-                                <li class="item-search"><span class="span-title"> Price product</span>
-                                    <input type="range" min="0" max="100" oninput="rangevalue.value=value +'$'" />
-                                    <output id="rangevalue">50$</output>
+                                <li class="item-search"><span class="span-title">
+                                        <p>
+                                            <label for="amount">Price range:</label>
+                                            <input type="text" id="amount-shop" readonly>
+
+                                        </p>
+
+                                        <div id="slider-range-shop"></div>
                                 </li>
                                 <li class="item-search ">
                                     <span class="span-title">Type product</span>
                                     <ul class="product-list__type">
                                         <li class="product-item__type">
                                             <a class="product-link__type" data-set="birthday" ng-model="type"
-                                                ng-click="getType('birthday')" value="birthday">Birthday</a>
+                                                ng-click="sortBy('birthday')" value="birthday">Birthday</a>
                                         </li>
                                         <li class="product-item__type"><a class="product-link__type" data-set="Marriage"
-                                                ng-click="getType('Marriage')" ng-model="type">Marriagey</a>
+                                                ng-click="sortBy('Marriage')" ng-model="type">Marriagey</a>
                                         </li>
                                         <li class="product-item__type"><a class="product-link__type"
-                                                data-set="Anniversary" ng-click="getType('Anniversary')"
+                                                data-set="Anniversary" ng-click="sortBy('Anniversary')"
                                                 ng-model="type">Anniversary</a>
                                         </li>
                                         <li class="product-item__type"><a class="product-link__type" data-set="gallsery"
-                                                ng-click="getType('gallsery')" ng-model="type">Gallsery</a>
+                                                ng-click="sortBy('gallsery')" ng-model="type">Gallsery</a>
                                         </li>
 
                                     </ul>
@@ -52,11 +57,11 @@
                                     <span class="span-title">Egg</span>
                                     <ul class="product-list__type">
                                         <li class="product-item__type"><a href="" class="product-link__type"
-                                                ng-model="egg" ng-click="orderfilEgg('with Egg')"
-                                                data-set="with Egg">With Egg</a>
+                                                ng-click="sortBy('with')" data-set="with Egg">With
+                                                Egg</a>
                                         </li>
                                         <li class="product-item__type"><a href="" class="product-link__type"
-                                                ng-model="egg" ng-click="orderfilEgg('no')" data-set="no">Have Egg </a>
+                                                ng-click="sortBy('no')" data-set="no">Have Egg </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -92,9 +97,9 @@
             </div>
             <div class="shop-card wd-76 s-full-width">
                 <div class="container-product">
-                    <div class="product-content">
-                        <div class=" wd-thir col-thir s-col-full pd-8"
-                            ng-repeat=" item in dataProduct| filter:{'type':type}|filter:{'type':filter}|filter:paginationFilter track by $index ">
+                    <div class="product-content" ng-model="filter">
+                        <div class=" wd-thir col-thir s-col-full pd-8" ng-repeat=" item in dataProduct|myFilter:prop|rangePrice:
+                            {'toPrice':to_price,'fromPrice':from_price}| limitTo :pageSize:begin">
 
                             <div class="box-product">
 
