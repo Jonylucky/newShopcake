@@ -2,23 +2,30 @@
     <div class="bg-shop"></div>
     <div class="container pd-16">
         <div class="continer-login-from">
-            <form action="" class="login-form s-full-width" name="login-form">
+            <form action="" class="login-form s-full-width" name="form" ng-submit="login()">
                 <div class=" head">
                     <h1> Registration Form</h1>
                 </div>
                 <ul class="list-input">
 
                     <li class="item-input"><input type="email" class="info-email wd-full" placeholder="Enter your email"
-                            ng-model="email" name="email" required /></li>
+                            ng-model="myEmail" overwrite-email name="overwrittenEmail" required /><br>
+                        <span ng-show="form.overwrittenEmail.$error.email" class="span-erro">This email format is
+                            invalid!</span>
+                    </li>
                     <li class="item-input"><input type="password" class="info-number wd-full "
                             placeholder="Enter your password" ng-model="password" id="password" name="password"
-                            required /></li>
-                    <li class="item-input"> <a href="#">
+                            required /><br>
+
+                        <span ng-show="check" class="span-erro">
+                            Incorrect password</span>
+                    </li>
+                    <li class="item-input"> <a>
                             <h3>Forgot your password?</h3>
                         </a></li>
-                    <li class="item-input"><a type="submit" class="btn" id="to-user" ng-click="login()">Login</a>
+                    <li class="item-input"><a id="to-user" type="submit" ng-click="login()" class="btn">Login</a>
                     </li>
-                    <li class="item-input"> <span>--Or--</span></li>
+                    <li class=" item-input" style="text-align: center;"> <span>--Or--</span></li>
 
                     <li class="item-input"><a href="#!register" type="cancel" class="btn btn-google"><i
                                 class="fa-brands fa-google"></i>Google</a></li>

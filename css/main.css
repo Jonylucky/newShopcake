@@ -680,7 +680,9 @@ display: none;
 .container-shop__conten {
   display: flex;
 }
-
+.container-product {
+  width: 100%;
+}
 .container-sidebar {
   width: 100%;
   padding: 18px 0;
@@ -1092,6 +1094,10 @@ text-align: center;
 padding-top: 8px;
 
 }
+.head__total a{
+  color: #ffff;
+  text-decoration: none;
+}
 .btn-continue{
  width: 100%; 
 }
@@ -1133,12 +1139,16 @@ padding-top: 8px;
 list-style: none;
 width: 100%;
 padding: 0;
-text-align: center;
+
 padding: 8px 0;
 }
 .item-input a{
   width: 100%;
+  text-decoration: none;
  
+}
+.item-input h3{
+  color: #ffff;
 }
 .item-input span{
   color: #ffff;
@@ -1156,6 +1166,10 @@ background-color: #390b0d;
 }
 .btn-twiter{
 background-color: #2596be;
+}
+.span-erro{
+ font-size: 1.2rem !important;
+ color: #f1979c !important;
 }
 /* user page */
 .nav-slider__user{
@@ -1190,6 +1204,7 @@ object-fit: cover;
   padding: 4px 0;
 
 }
+
 .user-item h3{
   color: #fff;
   font-size: 2rem;
@@ -1200,6 +1215,9 @@ object-fit: cover;
 .user-item:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   background-color: var(--brown);
+}
+.item-input button{
+  width: 100%;
 }
 /* ==========foodter===========  */
 .footer .box-container {

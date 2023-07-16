@@ -263,6 +263,7 @@
 
 </body>
 <script>
+    'use strict';
     // carousel
     // let navbar = document.querySelector('.navbar');
 
@@ -432,8 +433,6 @@
             var toPrice = rangePrice.toPrice != undefined ? parseInt(rangePrice.toPrice) : 1;
             var fromPrice = rangePrice.fromPrice != undefined ? parseInt(rangePrice.fromPrice) : 100;
             angular.forEach(items, function (item) {
-                console.log(item.price)
-                console.log(fromPrice)
 
                 if (item.price >= toPrice) {
                     filteredValue.push(item);
@@ -687,7 +686,7 @@
         var listUser = [];
         var user = {
             email: "",
-            password: ""
+            password: false
         }
         $http.get("./data/user.json").then(function (response) {
             listUser = response.data.details
@@ -698,17 +697,35 @@
 
         // login
         console.log(listUser);
-
+        //validateEmail
+        function validateEmail(email) {
+            let res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            return res.test(email);
+        }
 
         $scope.login = function () {
+
             console.log(listUser)
+
             user.email = $scope.email;
             user.password = $scope.password;
-            console.log(user)
+
+
+
+
+
             let item = listUser.filter((el) => el.password == user.password);
-            console.log(item);
-            myService.loginUser(item);
-            $("#to-user").attr('href', '#!/user')
+            if (item.length == 1) {
+                myService.loginUser(item);
+                console.log(item)
+                $("#to-user").attr('href', '#!/user')
+            } else {
+                $scope.check = true
+            }
+
+
+
+
         };
 
         // get user
