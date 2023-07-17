@@ -215,6 +215,38 @@ display: none;
     font-size: 5rem;
     
 }
+/* login */
+.item-input a {
+ 
+  padding: 30px 0;
+  font-size: 2.6rem;
+}
+.item-input h3{
+  font-size: 2.3rem !important;
+  }
+  .span-erro {
+    font-size: 2.2rem !important;
+}
+/* user */
+.user-item a {
+
+  font-size: 2.6rem;
+ 
+}
+.user-item span {
+
+  font-size: 2.6rem;
+ 
+}
+.user-item h3 {
+
+  font-size: 2.6rem;
+ 
+}
+.nav-slider__user{
+  width: 60%;
+}
+/*  */
 #next-slide, #prev-slide {
   
   top: 47%;
@@ -418,5 +450,13 @@ width: 100%;
  
   height: 140px;
 
+}
+/* login */
+.item-input h3{
+font-size: 1.4rem;
+}
+.item-input a{
+  font-size: 1.6rem;
+  padding: 20px 0;
 }
 }

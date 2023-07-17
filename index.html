@@ -161,12 +161,11 @@
                                     <li class=" item-search">
                                         <span class="span-title">Egg</span>
                                         <ul class="product-list__type">
-                                            <li class="product-item__type"><a href="" class="product-link__type"
-                                                    ng-model="egg" ng-click="orderfilEgg('with Egg')"
-                                                    data-set="with Egg">With Egg</a>
+                                            <li class="product-item__type"><a class="product-link__type"
+                                                    href="#!/shop/with">With Egg</a>
                                             </li>
-                                            <li class="product-item__type"><a href="" class="product-link__type"
-                                                    ng-model="egg" ng-click="orderfilEgg('no')" data-set="no">Have Egg
+                                            <li class="product-item__type"><a href="#!/shop/no"
+                                                    class="product-link__type">Have Egg
                                                 </a>
                                             </li>
                                         </ul>
@@ -651,7 +650,7 @@
 
 
 
-        console.log(myArrayWithNoDuplicates)
+
 
 
 
@@ -705,7 +704,7 @@
 
         $scope.login = function () {
 
-            console.log(listUser)
+
 
             user.email = $scope.email;
             user.password = $scope.password;
@@ -717,7 +716,7 @@
             let item = listUser.filter((el) => el.password == user.password);
             if (item.length == 1) {
                 myService.loginUser(item);
-                console.log(item)
+
                 $("#to-user").attr('href', '#!/user')
             } else {
                 $scope.check = true
@@ -741,7 +740,7 @@
     myApp.controller("userCtrl", function ($scope, myService) {
         // get my service  user
         $scope.items = myService.getUser();
-        console.log($scope.items)
+
     })
 
 </script>
