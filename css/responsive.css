@@ -459,4 +459,9 @@ font-size: 1.4rem;
   font-size: 1.6rem;
   padding: 20px 0;
 }
+/* user */
+.nav-slider__user {
+  width: 100%;
+  
+}
 }
