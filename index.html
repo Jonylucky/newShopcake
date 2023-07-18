@@ -467,7 +467,10 @@
             myService.set(data);
         };
         // save type to myserevice
-
+        // function set list cart 
+        $scope.setItemListCart = function (item) {
+            myService.setListCart(item)
+        }
     });
     // nav constroller
     myApp.controller("navCtrl", function ($scope, myService) {
@@ -492,10 +495,6 @@
 
     // shop controller
     myApp.controller("shopCtrl", function ($scope, $routeParams, myService) {
-
-
-
-
 
 
         $scope.prop = $routeParams.nameProduct;
@@ -564,9 +563,6 @@
         $scope.saveData = function (item) {
             myService.set(item);
         };
-
-
-
 
 
         // function set list cart 

@@ -464,4 +464,16 @@ font-size: 1.4rem;
   width: 100%;
   
 }
+/* cart */
+.active-cart{
+  display: none;
+}
+.cart-item {
+  width: 24%;
+  
+}
+.cart-item__product {
+  width: 77%;
+ 
+}
 }

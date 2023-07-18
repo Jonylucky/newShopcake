@@ -6,33 +6,27 @@
             <div class="wd-haft s-full-width">
                 <div class="cart-card">
                     <ul class="cart-list_head">
-                        <li class="cart-item__img pd-left">Image</li>
-                        <li class="cart-item_name">
-                            Name Product
-                        </li>
+                        <li class="cart-item__product pd-left"> Product</li>
                         <li class="cart-item">Quanttily</li>
-                        <li class="cart-item">Size</li>
-                        <li class="cart-item">Price</li>
-                        <li class="cart-item">Total</li>
-                        <li class="cart-item"></li>
-
+                        <li class="cart-item active-cart">Price</li>
+                        <li class="cart-item active-cart">Total</li>
                     </ul>
                 </div>
                 <div class="cart-card" ng-repeat="item in listCart track by $index" ng-init="item.amount = 1">
                     <ul class="cart-list">
-                        <li class="cart-item__img"><img class="cart__img" src="{{item.image}}" alt=""></li>
-                        <li class="cart-item_name">
-                            {{item.name}}
+                        <li class="cart-item__product">
+                            <img src="{{item.image}}" alt="" />
+                            <div class="item-head">
+                                <span>{{item.name}}</span>
+                                <p>{{item.price}} * {{item.amount}}</p>
+                                <a class="cart-item_link" ng-click="removeItem(item)">Remove</a>
+                            </div>
                         </li>
+
                         <li class="cart-item active-input"><input type="number" min="1" ng-model="item.amount">
                         </li>
-                        <li class="cart-item">{{item.descript.weight}}</li>
-                        <li class="cart-item">{{item.price}}$</li>
-                        <li class="cart-item">{{item.price * item.amount }}$</li>
-
-
-
-                        <li class="cart-item"><a class="cart-item_link" ng-click="removeItem(item)">Remove</a></li>
+                        <li class="cart-item active-cart">{{item.price}}$</li>
+                        <li class="cart-item active-cart">{{item.price * item.amount }}$</li>
                     </ul>
 
                 </div>
@@ -60,102 +54,7 @@
 
                     </ul>
                 </div>
-                <!-- 
-                <form action="" class="addcard s-full-width">
-                    <div class="container-detail-content ">
-                        <span class="span-detail">Usec Sans</span>
-                        <div class="content-head  bd-bottom">
-                            <h2 class="content-name">{{data.name}}</h2>
-                            <span class="content-head__price"> {{data.price}}$</span>
-                        </div>
-                        <div class="content-product bd-bottom pd-8">
-                            <div class="content-product__head">
 
-                                <h2 class="content-name">
-                                    Product Description
-                                </h2>
-                                <div class="button">
-                                    <a class="content-product__down" ng-click="showContent()">
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </a>
-                                    <a class="content-product__up hiden-btn" ng-click="hidenContent()">
-                                        <i class="fa-solid fa-chevron-up"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="content-product-body">
-                                <ol class="product-body__list ">
-                                    <li class="product-body__item">
-                                        <p class="p-product">{{data.descript.describe}}</p>
-                                    </li>
-                                    <li class="product-body__item">
-                                        <span class="span-product">
-                                            Ingredients
-                                        </span>
-
-                                        <p class="p-product">
-                                            {{data.descript.ingredientts}},{{data.egg}}
-                                        </p>
-                                    </li>
-                                    <li class="product-body__item">
-                                        <span class="span-product">
-                                            Allergens
-                                        </span>
-                                        <p class="p-product">
-                                            {{data.descript.allergens}}
-                                        </p>
-                                    </li>
-                                    <li class="product-body__item">
-                                        <span class="span-product">
-                                            Weight & Dimensions
-                                        </span>
-                                        <p class="p-product">
-                                            {{data.descript.weight}}-{{data.descript.dimensions}}
-                                        </p>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="content-date bd-bottom pd-8">
-                            <h2 class="content-name">
-                                Select delivery
-                            </h2>
-                            <input type="date" class="content-date__input">
-                        </div>
-                        <div class="content-param bd-bottom pd-8">
-                            <div class="wd-thir s-full-width">
-                                <span class="span-detail">Quantily</span>
-                                <input type="number" class="param__quantily  s-full-width" />
-                            </div>
-                            <div class="wd-thir s-full-width">
-                                <span class="span-detail">Size</span><br>
-                                <select name="" id="" class="param-size">
-                                    <option value="">S</option>
-                                    <option value="">M</option>
-                                    <option value="">L</option>
-
-                                </select>
-                            </div>
-                            <div class="wd-thir s-full-width">
-                                <span class="span-detail">Candles</span><br>
-                                <select name="" id="" class="param__candles">
-                                    <option value="">10</option>
-                                    <option value="">20</option>
-                                    <option value="">30</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="content-mesage bd-bottom pd-8">
-                            <h2 class="content-name">
-                                Card message
-                            </h2>
-                            <textarea name="" id="" cols="30" rows="10" class="content-mesage-text"></textarea>
-                        </div>
-                        <button class="btn content-add " type="submit" style="width: 100%;margin:  16px 0;">Add
-                            to
-                            card</button>
-                    </div>
-                </form> -->
             </div>
         </div>
 
