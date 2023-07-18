@@ -3,6 +3,33 @@
     <div class="bg-shop"></div>
     <br>
     <div class="container">
+        <div class="container-blogs">
+
+            <div class="container-box-blogs">
+                <div class="wd-thir  s-col-full mg-small" ng-repeat="item in listBlog track by $index">
+
+                    <div class="box-blog">
+                        <div class="box-header">
+                            <img class="box-header__img" decoding="async" src={{item.img}} alt="">
+                        </div>
+                        <div class="box-content">
+                            <div class=" box-content__icon">
+                                <a href="#"> <i class="fsa fa-calendar"></i>
+                                    {{item.date.day}},{{item.date.month}},{{item.date.year}} </a>
+                                <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+                            </div>
+                            <h3>{{ item.name}}</h3>
+                            <p>{{item.content}}</p>
+                            <a href="" class="btn">read more...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
 
         <div class="container-blog">
 

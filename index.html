@@ -632,7 +632,17 @@
         // });
     });
     myApp.controller("aboutCtrl", function ($scope) { });
-    myApp.controller("blogCtrl", function ($scope) {
+
+    // blog controller
+
+    myApp.controller("blogCtrl", function ($scope, $http) {
+
+        $http.get("./data/blog.json").then(function (response) {
+            $scope.listBlog = response.data.blog
+
+
+        })
+
 
     })
     myApp.controller("cartCtrl", function ($scope, myService) {

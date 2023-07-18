@@ -574,8 +574,9 @@ display: none;
 }
 .box-header__img {
   width: 100%;
-  height: 100%;
+  height: 312px;
   object-fit: cover;
+  object-position: 50% 44%;
 }
 .box-content {
   padding: 8px 16px;
@@ -586,7 +587,10 @@ display: none;
 }
 .box-content p {
   font-size: 1.4rem;
-  padding-bottom: 8px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .box-content__icon {
@@ -1240,6 +1244,9 @@ object-fit: cover;
 }
 .item-input button{
   width: 100%;
+}
+.item-head p{
+  display: none;
 }
 /* ==========foodter===========  */
 .footer .box-container {

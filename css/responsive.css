@@ -206,6 +206,13 @@ display: none;
   margin-top: 12px;
   }
   /* box- product */
+  /* blog */
+  .box-content h3 {
+    font-size: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
  
 }
 
@@ -476,4 +483,8 @@ font-size: 1.4rem;
   width: 77%;
  
 }
+.item-head p{
+  display: block;
+}
+
 }
