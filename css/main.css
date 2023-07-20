@@ -1252,6 +1252,7 @@ object-fit: cover;
 .blog-detail-head{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
 }
 .container-content__blog{
@@ -1262,8 +1263,9 @@ object-fit: cover;
 .blog-detail-list{
   list-style: none;
   padding: 0;
+  width: 60%;
 }
-.blog-detail-item{
+.blog-detail-item {
   padding: 8px 0;
   font-size: 1.6rem;
 
@@ -1306,6 +1308,7 @@ font-size: 3rem;
 padding: 8px 0;
 font-size: 1.6rem;
 }
+
 
 /* ==========foodter===========  */
 .footer .box-container {

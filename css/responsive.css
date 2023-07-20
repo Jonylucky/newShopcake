@@ -213,7 +213,12 @@ display: none;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
- 
+/* detail blog */
+.blog-detail-list{
+  
+  order: 2;
+}
+
 }
 
 /* tablet */
@@ -348,6 +353,25 @@ nav {
  
   height: 250px;
  
+}
+/* detail blog */
+.detail-ingredients__for__item {
+  font-size: 2.6rem;
+}
+.blog-detail-instructions__order__item {
+  font-size: 2.6rem;
+}
+ 
+.blog-detail-item {
+  font-size: 2.6rem;
+}
+
+.titel {
+  font-size: 3rem;
+}
+
+.blog-detail-instructions h2 {
+  font-size: 4rem;
 }
 }
 /* mobile */
@@ -486,5 +510,7 @@ font-size: 1.4rem;
 .item-head p{
   display: block;
 }
+/* detail blog  */
+
 
 }
