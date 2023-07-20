@@ -321,6 +321,9 @@
             .when("/user", {
                 templateUrl: "views/user.html",
             })
+            .when("/blog-detail/:id", {
+                templateUrl: "views/blog-Detail.html",
+            })
     });
     myApp.run(function ($rootScope, $http) {
         $http.get("./data/data.json").then(function (response) {
@@ -643,8 +646,13 @@
 
         })
 
+        $scope.setIdBlog = function (id) {
+            console.log(id)
+        }
+
 
     })
+
     myApp.controller("cartCtrl", function ($scope, myService) {
 
         // get list cart 
@@ -737,8 +745,6 @@
 
         };
 
-        // get user
-
 
         //logout
         $scope.logout = function (data) {
@@ -752,6 +758,21 @@
         $scope.items = myService.getUser();
 
     })
+    // detail blog
+    myApp.controller("blogDetailCtrl", function ($scope, $routeParams, $http) {
+        var listDetailBlog = [];
+        let idBlog = $routeParams.id;
+
+
+        $http.get("./data/detail-blog.json").then(function (response) {
+            listDetailBlog = response.data.blogDetail;
+            $scope.itemBlog = listDetailBlog.filter(item => item.id == idBlog)
+            console.log($scope.itemBlog)
+
+        });
+
+
+    });
 
 </script>
 
