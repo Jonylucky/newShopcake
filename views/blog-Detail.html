@@ -1,0 +1,201 @@
+<div class="container-blog__detail" ng-controller="blogDetailCtrl">
+    <div class="bg-shop"></div>
+    <div class="container">
+        <div class="container-content__blog" ng-repeat="item in itemBlog track by $index">
+
+            <div class="blog-detail-head">
+                <ul class="blog-detail-list">
+                    <li class="blog-detail-item">
+                        <h3>{{item.brandcake.name}}</h3>
+                    </li>
+                    <li class="blog-detail-item">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>{{item.brandcake.form}} from</span> <span>{{item.brandcake.votes
+                            }} votes</span>
+                    </li>
+                    <li class="blog-detail-item">
+                        <P>Lemon cake layers baked on a shortbread crust, with lemon curd filling and lemon buttercream.
+                        </P>
+                    </li>
+                    <li class="blog-detail-item">
+                        <ol class="order-list__time">
+                            <li class="order-item__time"><span class="titel">Prep Time</span>
+                                <p>{{item.brandcake.timecook.prep}} hr</p>
+                            </li>
+                            <li class="order-item__time"><span class="titel">Cook Time</span>
+                                <p>{{item.brandcake.timecook.cook}} hr</p>
+                            </li>
+                            <li class="order-item__time"><span class="titel">Total Time</span>
+                                <p>{{item.brandcake.timecook.total}} hr</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="blog-detail-item center-item">
+                        <a href="" class="btn"> <i class="fa-solid fa-print "></i>Print Recipe</a>
+                        <a href="" class="btn"><i class="fa-solid fa-heart-circle-check "></i>Review Recipe</a>
+
+                    </li>
+                </ul>
+                <div class="box-header">
+                    <img class="box-header__img" decoding="async" src={{item.src}} alt="">
+                </div>
+            </div>
+            <div class="bog-detail-content">
+                <div class="blog-detail-ingredients">
+
+                    <div class="detail-ingredients__for">
+                        <ul class="detail-ingredients__for__list">
+                            <li class="detail-ingredients__for__item"><span class="titel">FOR THE SHORTBREAD
+                                    CRUST</span>
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.theshortbread.step1}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.theshortbread.step2}}
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.theshortbread.step3}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.theshortbread.step4}}</li>
+
+                        </ul>
+                    </div>
+                    <div class="detail-ingredients__for">
+                        <ul class="detail-ingredients__for__list">
+                            <li class="detail-ingredients__for__item"><span class="titel">FOR THE CAKE</span>
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step1}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step2}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step3}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step4}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step5}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step6}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step7}}
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step8}}
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thecake
+                                .step9}}
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detail-ingredients__for">
+                        <ul class="detail-ingredients__for__list">
+                            <li class="detail-ingredients__for__item"><span class="titel">FOR THE LEMON CURD</span>
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon
+                                .step1}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon
+                                .step2}}
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon
+                                .step3}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon
+                                .step4}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon
+                                .step5}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon
+                                .step6}}</li>
+
+                        </ul>
+                    </div>
+                    <div class="detail-ingredients__for">
+                        <ul class="detail-ingredients__for__list">
+                            <li class="detail-ingredients__for__item"><span class="titel">FOR THE LEMON FROSTING</span>
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon.step1}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon.step2}}
+                            </li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon.step3}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon.step4}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon.step5}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon.step6}}</li>
+                            <li class="detail-ingredients__for__item">{{item.ingredients.thelemon.step7}}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blog-detail-instructions">
+                    <h2>instructions</h2>
+                    <div class="blog-detail-instructions__for">
+                        <span class="titel">FOR THE SHORTBREAD CRUST</span>
+                        <ol class="blog-detail-instruction__order_list">
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.theshortbread.step1}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.theshortbread.step2}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.theshortbread.step3}}
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="blog-detail-instructions__for">
+                        <span class="titel">FOR THE CAKE</span>
+                        <ol class="blog-detail-instruction__order_list">
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step1}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step2}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step3}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step4}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step5}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step6}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step7}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thecake.step8}}
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="blog-detail-instructions__for">
+                        <span class="titel">FOR THE BUTTERCREAM</span>
+                        <ol class="blog-detail-instruction__order_list">
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thebuttercream
+                                .step1}}</li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thebuttercream
+                                .step2}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.thebuttercream
+                                .step3}}
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="blog-detail-instructions__for">
+
+                        <span class="titel">ASSEMBLY</span>
+                        <ol class="blog-detail-instructions__order_list">
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.assembly
+                                .step1}} </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.assembly
+                                .step2}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.assembly
+                                .step3}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.assembly
+                                .step4}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.assembly
+                                .step5}}
+                            </li>
+                            <li class="blog-detail-instructions__order__item">{{item.instuctions.assembly
+                                .step6}}
+                            </li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

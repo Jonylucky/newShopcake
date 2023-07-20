@@ -1066,7 +1066,7 @@ font-size: 1.4rem;
 
 }
 .item-head span{
-  font-size: 1.rem;
+  font-size: 1.6rem;
 
 }
 .cart-item__product img{
@@ -1248,6 +1248,65 @@ object-fit: cover;
 .item-head p{
   display: none;
 }
+/* blog  detail  */
+.blog-detail-head{
+  display: flex;
+  justify-content: space-between;
+
+}
+.container-content__blog{
+  padding: 32px;
+  background-color: #b43f11;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+.blog-detail-list{
+  list-style: none;
+  padding: 0;
+}
+.blog-detail-item{
+  padding: 8px 0;
+  font-size: 1.6rem;
+
+}
+.order-list__time{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-right: 16px;
+}
+.center-item{
+  text-align: center;
+}
+
+
+
+.bog-detail-content{
+  width: 50%;
+}
+
+ .titel{
+  font-size: 2rem;
+  font-weight: 600;
+
+}
+
+
+
+.detail-ingredients__for__item{
+  padding: 8px 0;
+font-size: 1.6rem;
+}
+
+.blog-detail-instructions h2{
+font-size: 3rem;
+}
+
+.blog-detail-instructions__order__item{
+padding: 8px 0;
+font-size: 1.6rem;
+}
+
 /* ==========foodter===========  */
 .footer .box-container {
   display: grid;

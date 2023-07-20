@@ -1,0 +1,483 @@
+{
+    "blogDetail":[
+        {
+            "id":"1",
+            "src":"./images/blog-1.jpg",
+            "brandcake":{
+            "name":"10 ICE CREAM INSPIRED CAKES",
+             "form":5,
+             "votes":48,
+              "timecook":{
+                "prep":1,
+                "cook":1,
+                "total":1
+              }
+            },
+            "ingredients":{
+
+                "theshortbread":{
+                  "step1":"1/4 Cup (50 G) Granulated Sugar",
+                  "step2":"12 Tablespoons (169.5 G) Unsalted Butter Room Temperature",
+                  "step3":"2 1/2 Cups (300 G) All-Purpose Flour",
+                  "step4":"1/2 Teaspoon (2.8 G) Kosher Salt"
+                },
+                "thecake":{
+                    "step1":"3 Cups (345 G) Cake Flour",
+                  "step2":"1 3/4 Cup (350 G) Granulated Sugar",
+                  "step3":"1/4 Cup (2 Oz.) Instant Lemon Pudding Mix",
+                  "step4":"1/2 Teaspoon (3 G) Salt" ,
+                  "step5":"2 Teaspoons (8 G) Baking Powder",
+                  "step6":"12 Tablespoons (169.5 G) Unsalted Butter, At Room Temperature",
+                  "step7":"1 Teaspoon (4.2 G) Lemon Extract",
+                  "step8":"6 Egg Whites, At Room Temperature",
+                  "step9":"Yellow Food Coloring Optional"
+    
+                },
+                "thelemon":{
+                    "step1":"2 Cups (452g) Unsalted Butter, Slightly Cold",
+                    "step2":"6 Cups (750 G) Powdered Sugar, Measured And Then Sifted",
+                    "step3":"2 Teaspoons (8.4 G) Lemon Extract",
+                    "step4":"4 Tablespoons (60 G) Heavy Whipping Cream" ,
+                    "step5":"2 Teaspoons (8 G) Baking Powder",
+                    "step6":"Yellow Food Coloring Optional",
+                    "step7":"*This Buttercream Recipe Makes Enough To Fill And Cover Your Cake. If You Want To Add Additional Piping, You’ll Want To Make An Extra 1/2 Batch."
+                }
+            },
+            "instuctions":{
+
+                "theshortbread":{
+                  "step1":"Preheat The Oven To 325 Degrees F. Spray Three 8-Inch Or Four 6-Inch Round Cake Pans With Nonstick Spray, Line Each Pan With Parchment And Spray Again. Set Aside.",
+                  "step2":"Combine The Sugar And Butter In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment. Beat For 1 To 2 Minutes Until Creamy. Stir In The Salt And Flour. If The Mixture Is Too Crumbly, You Can Add Another Tablespoon Of Butter.",
+                  "step3":"Evenly Divide The Shortbread Cookie Crumbs Into Each Cake Pan (About 8 Ounces In The 8-Inch Pans Or 6 Ounces In The 6-Inch Pans). Using The Back Of A Spoon, Press The Shortbread Cookie Crumbs Into An Even Layer On The Bottom Of The Pan. Bake For About 6 Minutes. Will Be Light In Color. Let Cool While You Make The Cake Batter."
+                 
+                },
+                "thecake":{
+                    "step1":"Preheat Your Oven To 325 Degrees F.",
+                  "step2":"In A Medium Size Bowl, Lightly Whisk The Egg Whites And Add The Lemon Extract. Set Aside.",
+                  "step3":"In Another Medium Size Bowl, Whisk Together The Flour, Baking Powder, And Salt. Set Aside.",
+                  "step4":"In A Bowl Of An Electric Mixer Fitted With A Paddle Attachment, Beat The Butter, Sugar, And Pudding Mix Together On Medium Speed, Until Light And Fluffy, About 2 To 3 Minutes." ,
+                  "step5":"Scrape Down The Sides Of The Bowl And Begin To Add The Egg Mixture In 3 Separate Batches, Mixing Until Well Combined, About Two Minutes. Scrape Down The Sides And Bottom Of The Bowl To Ensure All The Batter Has Been Incorporated. Continue To Beat The Batter On Medium-High Speed Until Smooth.",
+                  "step6":"With The Mixer On Low Speed, Alternately Add The Flour Mixture And The Buttermilk, Starting And Ending With The Flour Mixture. Mix Until Combined. Fold In Food Coloring, If Using.",
+                  "step7":"Divide Batter Evenly Among Your Pans, Right On Top Of The Shortbread Crust, About 16 Oz Of Batter In Each 8-Inch Pan Or 12 Oz In Each 6-Inch Pan.",
+                  "step8":"Bake The Cakes (On The Shortbread Crust) Until A Toothpick Comes Out With A Few Crumbs Inserted Into The Center, About 25 To 30 Minutes. Let Cool On Wire Racks For 10 Minutes Before Inverting Them Onto Cooling Racks To Cool Completely. The Cake Will Stick To The Shortbread Crust And Flip Out Of The Pan Together."
+    
+                },
+                "thebuttercream":{
+                    "step1":"In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment, Beat The Butter Until Light And Fluffy, About 2 Minutes.",
+                    "step2":"Turn The Mixer To Low And Gradually Add The Powdered Sugar, Followed By The Cream, Salt And Lemon Extract. Mix Until Combined. Add Yellow Food Coloring, If Using. Mix Until Incorporated Completely. Turn The Mixer To Medium-High And Beat The Frosting For About 5 Minutes.",
+                    "step3":"Use Wooden Spoon To Beat The Frosting By Hand For About 2 Minutes To Push Out Any Air Pockets."
+                    
+                },
+                "assembly":{
+                    "step1":"Spread A Small Dollop Of Buttercream Onto A Cake Board. Place The First Cake Layer, Top Side Up, On The Board.",
+                    "step2":"Spread A Thin Layer Of Buttercream Over The Cake Layer And Pipe A Rim Of Buttercream Around The Edge Of The Cake To Create A Barrier To The Filling. Spread About 1/4 Cup Of The Curd In The Center Of The Cake, Carefully Spreading It To The Edge Of The Piping",
+                    "step3":"Place A Second Cake Layer On Top Of The Piped Buttercream And Filling And Repeat Step 2. Place The Final Cake Layer, Top Side Up, On The Second Layer Of Filling.",
+                    "step4":"Lightly Coat The Cake With A Thin Layer Of Buttercream To Lock In The Crumbs. Freeze The Cake For About 10 To 15 Minutes To Set The Buttercream.",
+                    "step5":"Finish Buttercream And Decorating The Cake With The Remaining Frosting. Serve A Spoonful Of The Remaining Lemon Curd With Each Slice Of Cake.",
+                    "step6":"The Cake Can Be Stored In The Freezer For About A Week, In An Airtight Container. Give The Cake About 8 Hours To Return To Room Temperature Before Serving."
+                    
+                    
+                }
+            }
+        },
+        {
+            "id":"2",
+            "src":"./images/blog-2.jpg",
+            "brandcake":{
+            "name":"S’MORES CAKE",
+             "form":5,
+             "votes":48,
+              "timecook":{
+                "prep":1,
+                "cook":1,
+                "total":1
+              }
+            },
+            "ingredients":{
+                "theshortbread":{
+                  "step1":"1/4 Cup (50 G) Granulated Sugar",
+                  "step2":"12 Tablespoons (169.5 G) Unsalted Butter Room Temperature",
+                  "step3":"2 1/2 Cups (300 G) All-Purpose Flour",
+                  "step4":"1/2 Teaspoon (2.8 G) Kosher Salt"
+                },
+                "thecake":{
+                    "step1":"3 Cups (345 G) Cake Flour",
+                  "step2":"1 3/4 Cup (350 G) Granulated Sugar",
+                  "step3":"1/4 Cup (2 Oz.) Instant Lemon Pudding Mix",
+                  "step4":"1/2 Teaspoon (3 G) Salt" ,
+                  "step5":"2 Teaspoons (8 G) Baking Powder",
+                  "step6":"12 Tablespoons (169.5 G) Unsalted Butter, At Room Temperature",
+                  "step7":"1 Teaspoon (4.2 G) Lemon Extract",
+                  "step8":"6 Egg Whites, At Room Temperature",
+                  "step9":"Yellow Food Coloring Optional"
+    
+                },
+                "thelemon":{
+                    "step1":"2 Cups (452g) Unsalted Butter, Slightly Cold",
+                    "step2":"6 Cups (750 G) Powdered Sugar, Measured And Then Sifted",
+                    "step3":"2 Teaspoons (8.4 G) Lemon Extract",
+                    "step4":"4 Tablespoons (60 G) Heavy Whipping Cream" ,
+                    "step5":"2 Teaspoons (8 G) Baking Powder",
+                    "step6":"Yellow Food Coloring Optional",
+                    "step7":"*This Buttercream Recipe Makes Enough To Fill And Cover Your Cake. If You Want To Add Additional Piping, You’ll Want To Make An Extra 1/2 Batch."
+                }
+            },
+            "instuctions":{
+
+                "theshortbread":{
+                  "step1":"Preheat The Oven To 325 Degrees F. Spray Three 8-Inch Or Four 6-Inch Round Cake Pans With Nonstick Spray, Line Each Pan With Parchment And Spray Again. Set Aside.",
+                  "step2":"Combine The Sugar And Butter In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment. Beat For 1 To 2 Minutes Until Creamy. Stir In The Salt And Flour. If The Mixture Is Too Crumbly, You Can Add Another Tablespoon Of Butter.",
+                  "step3":"Evenly Divide The Shortbread Cookie Crumbs Into Each Cake Pan (About 8 Ounces In The 8-Inch Pans Or 6 Ounces In The 6-Inch Pans). Using The Back Of A Spoon, Press The Shortbread Cookie Crumbs Into An Even Layer On The Bottom Of The Pan. Bake For About 6 Minutes. Will Be Light In Color. Let Cool While You Make The Cake Batter."
+                 
+                },
+                "thecake":{
+                    "step1":"Preheat Your Oven To 325 Degrees F.",
+                  "step2":"In A Medium Size Bowl, Lightly Whisk The Egg Whites And Add The Lemon Extract. Set Aside.",
+                  "step3":"In Another Medium Size Bowl, Whisk Together The Flour, Baking Powder, And Salt. Set Aside.",
+                  "step4":"In A Bowl Of An Electric Mixer Fitted With A Paddle Attachment, Beat The Butter, Sugar, And Pudding Mix Together On Medium Speed, Until Light And Fluffy, About 2 To 3 Minutes." ,
+                  "step5":"Scrape Down The Sides Of The Bowl And Begin To Add The Egg Mixture In 3 Separate Batches, Mixing Until Well Combined, About Two Minutes. Scrape Down The Sides And Bottom Of The Bowl To Ensure All The Batter Has Been Incorporated. Continue To Beat The Batter On Medium-High Speed Until Smooth.",
+                  "step6":"With The Mixer On Low Speed, Alternately Add The Flour Mixture And The Buttermilk, Starting And Ending With The Flour Mixture. Mix Until Combined. Fold In Food Coloring, If Using.",
+                  "step7":"Divide Batter Evenly Among Your Pans, Right On Top Of The Shortbread Crust, About 16 Oz Of Batter In Each 8-Inch Pan Or 12 Oz In Each 6-Inch Pan.",
+                  "step8":"Bake The Cakes (On The Shortbread Crust) Until A Toothpick Comes Out With A Few Crumbs Inserted Into The Center, About 25 To 30 Minutes. Let Cool On Wire Racks For 10 Minutes Before Inverting Them Onto Cooling Racks To Cool Completely. The Cake Will Stick To The Shortbread Crust And Flip Out Of The Pan Together."
+    
+                },
+                "thebuttercream":{
+                    "step1":"In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment, Beat The Butter Until Light And Fluffy, About 2 Minutes.",
+                    "step2":"Turn The Mixer To Low And Gradually Add The Powdered Sugar, Followed By The Cream, Salt And Lemon Extract. Mix Until Combined. Add Yellow Food Coloring, If Using. Mix Until Incorporated Completely. Turn The Mixer To Medium-High And Beat The Frosting For About 5 Minutes.",
+                    "step3":"Use Wooden Spoon To Beat The Frosting By Hand For About 2 Minutes To Push Out Any Air Pockets."
+                    
+                },
+                "assembly":{
+                    "step1":"Spread A Small Dollop Of Buttercream Onto A Cake Board. Place The First Cake Layer, Top Side Up, On The Board.",
+                    "step2":"Spread A Thin Layer Of Buttercream Over The Cake Layer And Pipe A Rim Of Buttercream Around The Edge Of The Cake To Create A Barrier To The Filling. Spread About 1/4 Cup Of The Curd In The Center Of The Cake, Carefully Spreading It To The Edge Of The Piping",
+                    "step3":"Place A Second Cake Layer On Top Of The Piped Buttercream And Filling And Repeat Step 2. Place The Final Cake Layer, Top Side Up, On The Second Layer Of Filling.",
+                    "step4":"Lightly Coat The Cake With A Thin Layer Of Buttercream To Lock In The Crumbs. Freeze The Cake For About 10 To 15 Minutes To Set The Buttercream.",
+                    "step5":"Finish Buttercream And Decorating The Cake With The Remaining Frosting. Serve A Spoonful Of The Remaining Lemon Curd With Each Slice Of Cake.",
+                    "step6":"The Cake Can Be Stored In The Freezer For About A Week, In An Airtight Container. Give The Cake About 8 Hours To Return To Room Temperature Before Serving."
+                    
+                    
+                }
+            }
+        },
+        {
+            "id":"3",
+            "src":"./images/blog-3.jpg",
+            "brandcake":{
+            "name":"CHOCOLATE TRUFFLE CAKE",
+             "form":5,
+             "votes":48,
+              "timecook":{
+                "prep":1,
+                "cook":1,
+                "total":1
+              }
+            },
+            "ingredients":{
+
+                "theshortbread":{
+                  "step1":"1/4 Cup (50 G) Granulated Sugar",
+                  "step2":"12 Tablespoons (169.5 G) Unsalted Butter Room Temperature",
+                  "step3":"2 1/2 Cups (300 G) All-Purpose Flour",
+                  "step4":"1/2 Teaspoon (2.8 G) Kosher Salt"
+                },
+                "thecake":{
+                    "step1":"3 Cups (345 G) Cake Flour",
+                  "step2":"1 3/4 Cup (350 G) Granulated Sugar",
+                  "step3":"1/4 Cup (2 Oz.) Instant Lemon Pudding Mix",
+                  "step4":"1/2 Teaspoon (3 G) Salt" ,
+                  "step5":"2 Teaspoons (8 G) Baking Powder",
+                  "step6":"12 Tablespoons (169.5 G) Unsalted Butter, At Room Temperature",
+                  "step7":"1 Teaspoon (4.2 G) Lemon Extract",
+                  "step8":"6 Egg Whites, At Room Temperature",
+                  "step9":"Yellow Food Coloring Optional"
+    
+                },
+                "thelemon":{
+                    "step1":"2 Cups (452g) Unsalted Butter, Slightly Cold",
+                    "step2":"6 Cups (750 G) Powdered Sugar, Measured And Then Sifted",
+                    "step3":"2 Teaspoons (8.4 G) Lemon Extract",
+                    "step4":"4 Tablespoons (60 G) Heavy Whipping Cream" ,
+                    "step5":"2 Teaspoons (8 G) Baking Powder",
+                    "step6":"Yellow Food Coloring Optional",
+                    "step7":"*This Buttercream Recipe Makes Enough To Fill And Cover Your Cake. If You Want To Add Additional Piping, You’ll Want To Make An Extra 1/2 Batch."
+                }
+            },
+            "instuctions":{
+
+                "theshortbread":{
+                  "step1":"Preheat The Oven To 325 Degrees F. Spray Three 8-Inch Or Four 6-Inch Round Cake Pans With Nonstick Spray, Line Each Pan With Parchment And Spray Again. Set Aside.",
+                  "step2":"Combine The Sugar And Butter In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment. Beat For 1 To 2 Minutes Until Creamy. Stir In The Salt And Flour. If The Mixture Is Too Crumbly, You Can Add Another Tablespoon Of Butter.",
+                  "step3":"Evenly Divide The Shortbread Cookie Crumbs Into Each Cake Pan (About 8 Ounces In The 8-Inch Pans Or 6 Ounces In The 6-Inch Pans). Using The Back Of A Spoon, Press The Shortbread Cookie Crumbs Into An Even Layer On The Bottom Of The Pan. Bake For About 6 Minutes. Will Be Light In Color. Let Cool While You Make The Cake Batter."
+                 
+                },
+                "thecake":{
+                    "step1":"Preheat Your Oven To 325 Degrees F.",
+                  "step2":"In A Medium Size Bowl, Lightly Whisk The Egg Whites And Add The Lemon Extract. Set Aside.",
+                  "step3":"In Another Medium Size Bowl, Whisk Together The Flour, Baking Powder, And Salt. Set Aside.",
+                  "step4":"In A Bowl Of An Electric Mixer Fitted With A Paddle Attachment, Beat The Butter, Sugar, And Pudding Mix Together On Medium Speed, Until Light And Fluffy, About 2 To 3 Minutes." ,
+                  "step5":"Scrape Down The Sides Of The Bowl And Begin To Add The Egg Mixture In 3 Separate Batches, Mixing Until Well Combined, About Two Minutes. Scrape Down The Sides And Bottom Of The Bowl To Ensure All The Batter Has Been Incorporated. Continue To Beat The Batter On Medium-High Speed Until Smooth.",
+                  "step6":"With The Mixer On Low Speed, Alternately Add The Flour Mixture And The Buttermilk, Starting And Ending With The Flour Mixture. Mix Until Combined. Fold In Food Coloring, If Using.",
+                  "step7":"Divide Batter Evenly Among Your Pans, Right On Top Of The Shortbread Crust, About 16 Oz Of Batter In Each 8-Inch Pan Or 12 Oz In Each 6-Inch Pan.",
+                  "step8":"Bake The Cakes (On The Shortbread Crust) Until A Toothpick Comes Out With A Few Crumbs Inserted Into The Center, About 25 To 30 Minutes. Let Cool On Wire Racks For 10 Minutes Before Inverting Them Onto Cooling Racks To Cool Completely. The Cake Will Stick To The Shortbread Crust And Flip Out Of The Pan Together."
+    
+                },
+                "thebuttercream":{
+                    "step1":"In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment, Beat The Butter Until Light And Fluffy, About 2 Minutes.",
+                    "step2":"Turn The Mixer To Low And Gradually Add The Powdered Sugar, Followed By The Cream, Salt And Lemon Extract. Mix Until Combined. Add Yellow Food Coloring, If Using. Mix Until Incorporated Completely. Turn The Mixer To Medium-High And Beat The Frosting For About 5 Minutes.",
+                    "step3":"Use Wooden Spoon To Beat The Frosting By Hand For About 2 Minutes To Push Out Any Air Pockets."
+                    
+                },
+                "assembly":{
+                    "step1":"Spread A Small Dollop Of Buttercream Onto A Cake Board. Place The First Cake Layer, Top Side Up, On The Board.",
+                    "step2":"Spread A Thin Layer Of Buttercream Over The Cake Layer And Pipe A Rim Of Buttercream Around The Edge Of The Cake To Create A Barrier To The Filling. Spread About 1/4 Cup Of The Curd In The Center Of The Cake, Carefully Spreading It To The Edge Of The Piping",
+                    "step3":"Place A Second Cake Layer On Top Of The Piped Buttercream And Filling And Repeat Step 2. Place The Final Cake Layer, Top Side Up, On The Second Layer Of Filling.",
+                    "step4":"Lightly Coat The Cake With A Thin Layer Of Buttercream To Lock In The Crumbs. Freeze The Cake For About 10 To 15 Minutes To Set The Buttercream.",
+                    "step5":"Finish Buttercream And Decorating The Cake With The Remaining Frosting. Serve A Spoonful Of The Remaining Lemon Curd With Each Slice Of Cake.",
+                    "step6":"The Cake Can Be Stored In The Freezer For About A Week, In An Airtight Container. Give The Cake About 8 Hours To Return To Room Temperature Before Serving."
+                    
+                    
+                }
+            }
+        },
+        {
+            "id":"4",
+            "src":"./images/rainbowcake.jpg",
+            "brandcake":{
+            "name":"RAINBOW MOSAIC CAKE",
+             "form":5,
+             "votes":48,
+              "timecook":{
+                "prep":1,
+                "cook":1,
+                "total":1
+              }
+            },
+            "ingredients":{
+
+                "theshortbread":{
+                  "step1":"1/4 Cup (50 G) Granulated Sugar",
+                  "step2":"12 Tablespoons (169.5 G) Unsalted Butter Room Temperature",
+                  "step3":"2 1/2 Cups (300 G) All-Purpose Flour",
+                  "step4":"1/2 Teaspoon (2.8 G) Kosher Salt"
+                },
+                "thecake":{
+                    "step1":"3 Cups (345 G) Cake Flour",
+                  "step2":"1 3/4 Cup (350 G) Granulated Sugar",
+                  "step3":"1/4 Cup (2 Oz.) Instant Lemon Pudding Mix",
+                  "step4":"1/2 Teaspoon (3 G) Salt" ,
+                  "step5":"2 Teaspoons (8 G) Baking Powder",
+                  "step6":"12 Tablespoons (169.5 G) Unsalted Butter, At Room Temperature",
+                  "step7":"1 Teaspoon (4.2 G) Lemon Extract",
+                  "step8":"6 Egg Whites, At Room Temperature",
+                  "step9":"Yellow Food Coloring Optional"
+    
+                },
+                "thelemon":{
+                    "step1":"2 Cups (452g) Unsalted Butter, Slightly Cold",
+                    "step2":"6 Cups (750 G) Powdered Sugar, Measured And Then Sifted",
+                    "step3":"2 Teaspoons (8.4 G) Lemon Extract",
+                    "step4":"4 Tablespoons (60 G) Heavy Whipping Cream" ,
+                    "step5":"2 Teaspoons (8 G) Baking Powder",
+                    "step6":"Yellow Food Coloring Optional",
+                    "step7":"*This Buttercream Recipe Makes Enough To Fill And Cover Your Cake. If You Want To Add Additional Piping, You’ll Want To Make An Extra 1/2 Batch."
+                }
+            },
+            "instuctions":{
+
+                "theshortbread":{
+                  "step1":"Preheat The Oven To 325 Degrees F. Spray Three 8-Inch Or Four 6-Inch Round Cake Pans With Nonstick Spray, Line Each Pan With Parchment And Spray Again. Set Aside.",
+                  "step2":"Combine The Sugar And Butter In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment. Beat For 1 To 2 Minutes Until Creamy. Stir In The Salt And Flour. If The Mixture Is Too Crumbly, You Can Add Another Tablespoon Of Butter.",
+                  "step3":"Evenly Divide The Shortbread Cookie Crumbs Into Each Cake Pan (About 8 Ounces In The 8-Inch Pans Or 6 Ounces In The 6-Inch Pans). Using The Back Of A Spoon, Press The Shortbread Cookie Crumbs Into An Even Layer On The Bottom Of The Pan. Bake For About 6 Minutes. Will Be Light In Color. Let Cool While You Make The Cake Batter."
+                 
+                },
+                "thecake":{
+                    "step1":"Preheat Your Oven To 325 Degrees F.",
+                  "step2":"In A Medium Size Bowl, Lightly Whisk The Egg Whites And Add The Lemon Extract. Set Aside.",
+                  "step3":"In Another Medium Size Bowl, Whisk Together The Flour, Baking Powder, And Salt. Set Aside.",
+                  "step4":"In A Bowl Of An Electric Mixer Fitted With A Paddle Attachment, Beat The Butter, Sugar, And Pudding Mix Together On Medium Speed, Until Light And Fluffy, About 2 To 3 Minutes." ,
+                  "step5":"Scrape Down The Sides Of The Bowl And Begin To Add The Egg Mixture In 3 Separate Batches, Mixing Until Well Combined, About Two Minutes. Scrape Down The Sides And Bottom Of The Bowl To Ensure All The Batter Has Been Incorporated. Continue To Beat The Batter On Medium-High Speed Until Smooth.",
+                  "step6":"With The Mixer On Low Speed, Alternately Add The Flour Mixture And The Buttermilk, Starting And Ending With The Flour Mixture. Mix Until Combined. Fold In Food Coloring, If Using.",
+                  "step7":"Divide Batter Evenly Among Your Pans, Right On Top Of The Shortbread Crust, About 16 Oz Of Batter In Each 8-Inch Pan Or 12 Oz In Each 6-Inch Pan.",
+                  "step8":"Bake The Cakes (On The Shortbread Crust) Until A Toothpick Comes Out With A Few Crumbs Inserted Into The Center, About 25 To 30 Minutes. Let Cool On Wire Racks For 10 Minutes Before Inverting Them Onto Cooling Racks To Cool Completely. The Cake Will Stick To The Shortbread Crust And Flip Out Of The Pan Together."
+    
+                },
+                "thebuttercream":{
+                    "step1":"In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment, Beat The Butter Until Light And Fluffy, About 2 Minutes.",
+                    "step2":"Turn The Mixer To Low And Gradually Add The Powdered Sugar, Followed By The Cream, Salt And Lemon Extract. Mix Until Combined. Add Yellow Food Coloring, If Using. Mix Until Incorporated Completely. Turn The Mixer To Medium-High And Beat The Frosting For About 5 Minutes.",
+                    "step3":"Use Wooden Spoon To Beat The Frosting By Hand For About 2 Minutes To Push Out Any Air Pockets."
+                    
+                },
+                "assembly":{
+                    "step1":"Spread A Small Dollop Of Buttercream Onto A Cake Board. Place The First Cake Layer, Top Side Up, On The Board.",
+                    "step2":"Spread A Thin Layer Of Buttercream Over The Cake Layer And Pipe A Rim Of Buttercream Around The Edge Of The Cake To Create A Barrier To The Filling. Spread About 1/4 Cup Of The Curd In The Center Of The Cake, Carefully Spreading It To The Edge Of The Piping",
+                    "step3":"Place A Second Cake Layer On Top Of The Piped Buttercream And Filling And Repeat Step 2. Place The Final Cake Layer, Top Side Up, On The Second Layer Of Filling.",
+                    "step4":"Lightly Coat The Cake With A Thin Layer Of Buttercream To Lock In The Crumbs. Freeze The Cake For About 10 To 15 Minutes To Set The Buttercream.",
+                    "step5":"Finish Buttercream And Decorating The Cake With The Remaining Frosting. Serve A Spoonful Of The Remaining Lemon Curd With Each Slice Of Cake.",
+                    "step6":"The Cake Can Be Stored In The Freezer For About A Week, In An Airtight Container. Give The Cake About 8 Hours To Return To Room Temperature Before Serving."
+                    
+                    
+                }
+            }
+        },
+        {
+            "id":"5",
+            "src":"./images/blog-5.jpg",
+            "brandcake":{
+            "name":"Blogs Title Page",
+             "form":5,
+             "votes":48,
+              "timecook":{
+                "prep":1,
+                "cook":1,
+                "total":1
+              }
+            },
+            "ingredients":{
+
+                "theshortbread":{
+                  "step1":"1/4 Cup (50 G) Granulated Sugar",
+                  "step2":"12 Tablespoons (169.5 G) Unsalted Butter Room Temperature",
+                  "step3":"2 1/2 Cups (300 G) All-Purpose Flour",
+                  "step4":"1/2 Teaspoon (2.8 G) Kosher Salt"
+                },
+                "thecake":{
+                    "step1":"3 Cups (345 G) Cake Flour",
+                  "step2":"1 3/4 Cup (350 G) Granulated Sugar",
+                  "step3":"1/4 Cup (2 Oz.) Instant Lemon Pudding Mix",
+                  "step4":"1/2 Teaspoon (3 G) Salt" ,
+                  "step5":"2 Teaspoons (8 G) Baking Powder",
+                  "step6":"12 Tablespoons (169.5 G) Unsalted Butter, At Room Temperature",
+                  "step7":"1 Teaspoon (4.2 G) Lemon Extract",
+                  "step8":"6 Egg Whites, At Room Temperature",
+                  "step9":"Yellow Food Coloring Optional"
+    
+                },
+                "thelemon":{
+                    "step1":"2 Cups (452g) Unsalted Butter, Slightly Cold",
+                    "step2":"6 Cups (750 G) Powdered Sugar, Measured And Then Sifted",
+                    "step3":"2 Teaspoons (8.4 G) Lemon Extract",
+                    "step4":"4 Tablespoons (60 G) Heavy Whipping Cream" ,
+                    "step5":"2 Teaspoons (8 G) Baking Powder",
+                    "step6":"Yellow Food Coloring Optional",
+                    "step7":"*This Buttercream Recipe Makes Enough To Fill And Cover Your Cake. If You Want To Add Additional Piping, You’ll Want To Make An Extra 1/2 Batch."
+                }
+            },
+            "instuctions":{
+
+                "theshortbread":{
+                  "step1":"Preheat The Oven To 325 Degrees F. Spray Three 8-Inch Or Four 6-Inch Round Cake Pans With Nonstick Spray, Line Each Pan With Parchment And Spray Again. Set Aside.",
+                  "step2":"Combine The Sugar And Butter In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment. Beat For 1 To 2 Minutes Until Creamy. Stir In The Salt And Flour. If The Mixture Is Too Crumbly, You Can Add Another Tablespoon Of Butter.",
+                  "step3":"Evenly Divide The Shortbread Cookie Crumbs Into Each Cake Pan (About 8 Ounces In The 8-Inch Pans Or 6 Ounces In The 6-Inch Pans). Using The Back Of A Spoon, Press The Shortbread Cookie Crumbs Into An Even Layer On The Bottom Of The Pan. Bake For About 6 Minutes. Will Be Light In Color. Let Cool While You Make The Cake Batter."
+                 
+                },
+                "thecake":{
+                    "step1":"Preheat Your Oven To 325 Degrees F.",
+                  "step2":"In A Medium Size Bowl, Lightly Whisk The Egg Whites And Add The Lemon Extract. Set Aside.",
+                  "step3":"In Another Medium Size Bowl, Whisk Together The Flour, Baking Powder, And Salt. Set Aside.",
+                  "step4":"In A Bowl Of An Electric Mixer Fitted With A Paddle Attachment, Beat The Butter, Sugar, And Pudding Mix Together On Medium Speed, Until Light And Fluffy, About 2 To 3 Minutes." ,
+                  "step5":"Scrape Down The Sides Of The Bowl And Begin To Add The Egg Mixture In 3 Separate Batches, Mixing Until Well Combined, About Two Minutes. Scrape Down The Sides And Bottom Of The Bowl To Ensure All The Batter Has Been Incorporated. Continue To Beat The Batter On Medium-High Speed Until Smooth.",
+                  "step6":"With The Mixer On Low Speed, Alternately Add The Flour Mixture And The Buttermilk, Starting And Ending With The Flour Mixture. Mix Until Combined. Fold In Food Coloring, If Using.",
+                  "step7":"Divide Batter Evenly Among Your Pans, Right On Top Of The Shortbread Crust, About 16 Oz Of Batter In Each 8-Inch Pan Or 12 Oz In Each 6-Inch Pan.",
+                  "step8":"Bake The Cakes (On The Shortbread Crust) Until A Toothpick Comes Out With A Few Crumbs Inserted Into The Center, About 25 To 30 Minutes. Let Cool On Wire Racks For 10 Minutes Before Inverting Them Onto Cooling Racks To Cool Completely. The Cake Will Stick To The Shortbread Crust And Flip Out Of The Pan Together."
+    
+                },
+                "thebuttercream":{
+                    "step1":"In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment, Beat The Butter Until Light And Fluffy, About 2 Minutes.",
+                    "step2":"Turn The Mixer To Low And Gradually Add The Powdered Sugar, Followed By The Cream, Salt And Lemon Extract. Mix Until Combined. Add Yellow Food Coloring, If Using. Mix Until Incorporated Completely. Turn The Mixer To Medium-High And Beat The Frosting For About 5 Minutes.",
+                    "step3":"Use Wooden Spoon To Beat The Frosting By Hand For About 2 Minutes To Push Out Any Air Pockets."
+                    
+                },
+                "assembly":{
+                    "step1":"Spread A Small Dollop Of Buttercream Onto A Cake Board. Place The First Cake Layer, Top Side Up, On The Board.",
+                    "step2":"Spread A Thin Layer Of Buttercream Over The Cake Layer And Pipe A Rim Of Buttercream Around The Edge Of The Cake To Create A Barrier To The Filling. Spread About 1/4 Cup Of The Curd In The Center Of The Cake, Carefully Spreading It To The Edge Of The Piping",
+                    "step3":"Place A Second Cake Layer On Top Of The Piped Buttercream And Filling And Repeat Step 2. Place The Final Cake Layer, Top Side Up, On The Second Layer Of Filling.",
+                    "step4":"Lightly Coat The Cake With A Thin Layer Of Buttercream To Lock In The Crumbs. Freeze The Cake For About 10 To 15 Minutes To Set The Buttercream.",
+                    "step5":"Finish Buttercream And Decorating The Cake With The Remaining Frosting. Serve A Spoonful Of The Remaining Lemon Curd With Each Slice Of Cake.",
+                    "step6":"The Cake Can Be Stored In The Freezer For About A Week, In An Airtight Container. Give The Cake About 8 Hours To Return To Room Temperature Before Serving."
+                    
+                    
+                }
+            }
+        },
+        {
+            "id":"6",
+            "src":"./images/blog-6.jpg",
+            "brandcake":{
+            "name":"Blogs Title Page",
+             "form":5,
+             "votes":48,
+              "timecook":{
+                "prep":1,
+                "cook":1,
+                "total":1
+              }
+            },
+            "ingredients":{
+
+                "theshortbread":{
+                  "step1":"1/4 Cup (50 G) Granulated Sugar",
+                  "step2":"12 Tablespoons (169.5 G) Unsalted Butter Room Temperature",
+                  "step3":"2 1/2 Cups (300 G) All-Purpose Flour",
+                  "step4":"1/2 Teaspoon (2.8 G) Kosher Salt"
+                },
+                "thecake":{
+                    "step1":"3 Cups (345 G) Cake Flour",
+                  "step2":"1 3/4 Cup (350 G) Granulated Sugar",
+                  "step3":"1/4 Cup (2 Oz.) Instant Lemon Pudding Mix",
+                  "step4":"1/2 Teaspoon (3 G) Salt" ,
+                  "step5":"2 Teaspoons (8 G) Baking Powder",
+                  "step6":"12 Tablespoons (169.5 G) Unsalted Butter, At Room Temperature",
+                  "step7":"1 Teaspoon (4.2 G) Lemon Extract",
+                  "step8":"6 Egg Whites, At Room Temperature",
+                  "step9":"Yellow Food Coloring Optional"
+    
+                },
+                "thelemon":{
+                    "step1":"2 Cups (452g) Unsalted Butter, Slightly Cold",
+                    "step2":"6 Cups (750 G) Powdered Sugar, Measured And Then Sifted",
+                    "step3":"2 Teaspoons (8.4 G) Lemon Extract",
+                    "step4":"4 Tablespoons (60 G) Heavy Whipping Cream" ,
+                    "step5":"2 Teaspoons (8 G) Baking Powder",
+                    "step6":"Yellow Food Coloring Optional",
+                    "step7":"*This Buttercream Recipe Makes Enough To Fill And Cover Your Cake. If You Want To Add Additional Piping, You’ll Want To Make An Extra 1/2 Batch."
+                }
+            },
+            "instuctions":{
+
+                "theshortbread":{
+                  "step1":"Preheat The Oven To 325 Degrees F. Spray Three 8-Inch Or Four 6-Inch Round Cake Pans With Nonstick Spray, Line Each Pan With Parchment And Spray Again. Set Aside.",
+                  "step2":"Combine The Sugar And Butter In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment. Beat For 1 To 2 Minutes Until Creamy. Stir In The Salt And Flour. If The Mixture Is Too Crumbly, You Can Add Another Tablespoon Of Butter.",
+                  "step3":"Evenly Divide The Shortbread Cookie Crumbs Into Each Cake Pan (About 8 Ounces In The 8-Inch Pans Or 6 Ounces In The 6-Inch Pans). Using The Back Of A Spoon, Press The Shortbread Cookie Crumbs Into An Even Layer On The Bottom Of The Pan. Bake For About 6 Minutes. Will Be Light In Color. Let Cool While You Make The Cake Batter."
+                 
+                },
+                "thecake":{
+                    "step1":"Preheat Your Oven To 325 Degrees F.",
+                  "step2":"In A Medium Size Bowl, Lightly Whisk The Egg Whites And Add The Lemon Extract. Set Aside.",
+                  "step3":"In Another Medium Size Bowl, Whisk Together The Flour, Baking Powder, And Salt. Set Aside.",
+                  "step4":"In A Bowl Of An Electric Mixer Fitted With A Paddle Attachment, Beat The Butter, Sugar, And Pudding Mix Together On Medium Speed, Until Light And Fluffy, About 2 To 3 Minutes." ,
+                  "step5":"Scrape Down The Sides Of The Bowl And Begin To Add The Egg Mixture In 3 Separate Batches, Mixing Until Well Combined, About Two Minutes. Scrape Down The Sides And Bottom Of The Bowl To Ensure All The Batter Has Been Incorporated. Continue To Beat The Batter On Medium-High Speed Until Smooth.",
+                  "step6":"With The Mixer On Low Speed, Alternately Add The Flour Mixture And The Buttermilk, Starting And Ending With The Flour Mixture. Mix Until Combined. Fold In Food Coloring, If Using.",
+                  "step7":"Divide Batter Evenly Among Your Pans, Right On Top Of The Shortbread Crust, About 16 Oz Of Batter In Each 8-Inch Pan Or 12 Oz In Each 6-Inch Pan.",
+                  "step8":"Bake The Cakes (On The Shortbread Crust) Until A Toothpick Comes Out With A Few Crumbs Inserted Into The Center, About 25 To 30 Minutes. Let Cool On Wire Racks For 10 Minutes Before Inverting Them Onto Cooling Racks To Cool Completely. The Cake Will Stick To The Shortbread Crust And Flip Out Of The Pan Together."
+    
+                },
+                "thebuttercream":{
+                    "step1":"In The Bowl Of A Stand Mixer Fitted With The Paddle Attachment, Beat The Butter Until Light And Fluffy, About 2 Minutes.",
+                    "step2":"Turn The Mixer To Low And Gradually Add The Powdered Sugar, Followed By The Cream, Salt And Lemon Extract. Mix Until Combined. Add Yellow Food Coloring, If Using. Mix Until Incorporated Completely. Turn The Mixer To Medium-High And Beat The Frosting For About 5 Minutes.",
+                    "step3":"Use Wooden Spoon To Beat The Frosting By Hand For About 2 Minutes To Push Out Any Air Pockets."
+                    
+                },
+                "assembly":{
+                    "step1":"Spread A Small Dollop Of Buttercream Onto A Cake Board. Place The First Cake Layer, Top Side Up, On The Board.",
+                    "step2":"Spread A Thin Layer Of Buttercream Over The Cake Layer And Pipe A Rim Of Buttercream Around The Edge Of The Cake To Create A Barrier To The Filling. Spread About 1/4 Cup Of The Curd In The Center Of The Cake, Carefully Spreading It To The Edge Of The Piping",
+                    "step3":"Place A Second Cake Layer On Top Of The Piped Buttercream And Filling And Repeat Step 2. Place The Final Cake Layer, Top Side Up, On The Second Layer Of Filling.",
+                    "step4":"Lightly Coat The Cake With A Thin Layer Of Buttercream To Lock In The Crumbs. Freeze The Cake For About 10 To 15 Minutes To Set The Buttercream.",
+                    "step5":"Finish Buttercream And Decorating The Cake With The Remaining Frosting. Serve A Spoonful Of The Remaining Lemon Curd With Each Slice Of Cake.",
+                    "step6":"The Cake Can Be Stored In The Freezer For About A Week, In An Airtight Container. Give The Cake About 8 Hours To Return To Room Temperature Before Serving."
+                    
+                    
+                }
+            }
+        }
+    ]
+}
