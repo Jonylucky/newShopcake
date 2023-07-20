@@ -449,7 +449,7 @@
         };
     })
     // home controller
-    myApp.controller("homeCtrl", function ($scope, myService) {
+    myApp.controller("homeCtrl", function ($scope, myService, $http) {
         let fade = document.querySelectorAll(".fade");
 
         let index = 0;
@@ -474,6 +474,11 @@
         $scope.setItemListCart = function (item) {
             myService.setListCart(item)
         }
+        $http.get("./data/blog.json").then(function (response) {
+            $scope.listBlogs = response.data.blog
+
+
+        })
     });
     // nav constroller
     myApp.controller("navCtrl", function ($scope, myService) {
@@ -497,7 +502,7 @@
     // app custommer filter
 
     // shop controller
-    myApp.controller("shopCtrl", function ($scope, $routeParams, myService) {
+    myApp.controller("shopCtrl", function ($scope, $routeParams, myService, $http) {
 
 
         $scope.prop = $routeParams.nameProduct;
