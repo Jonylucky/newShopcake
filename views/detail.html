@@ -6,9 +6,9 @@
             <div class=" wd-haft s-full-width">
                 <div class="container-detail__img">
 
-                    <div class="detail-img" style="background-image: url('{{data.image}}');
-                   height: 313px;">
-
+                    <div id="magnifying_area">
+                        <img id="magnifying_img" src='{{data.image}}' ng-mousemove="zoomIn($event)"
+                            ng-mouseleave="zoomOut()">
                     </div>
                 </div>
             </div>
