@@ -74,6 +74,19 @@ display: block;
   justify-content: center;
   padding: 4px 8px;
 }
+.active_cart{
+  position: absolute;
+  color: red;
+  padding: 0;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+ top: 0;
+right: 150px;
+text-align: center;
+
+}
 /* nav slide */
  /* nav sidebar */
  .nav-sidebar {
