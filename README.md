@@ -7,10 +7,23 @@ Project title: DCakeShop
 
 3 collaborators:
 
-Ta Hai Luong Student1459114
-Nguyen Khanh Danh Student1459128
-Nguyễn Tất Thiên Student1459122
-Đặng Quang Khánh Student1441452
+=======
+Ta Hai Luong
+Student1459114
+
+Nguyen Khanh Danh  
+Student1459128
+
+Nguyễn Tất Thiên
+Student1459122
+
+Đặng Quang Khánh
+Student1441452
+
+Nguyen Van Phung
+Student
+
+> > > > > > > e3698b14c7b501b9146fc5c187c52748d9d61b7d
 
 ============================
 
@@ -18,6 +31,6 @@ eProject documentation at https://github.com/Jonylucky/project-cakeShop/tree/Thi
 
 ============================
 
-# eProject published at https://jonylucky.github.io/newShopcake/#!/#%2F!
+eProject published at https://jonylucky.github.io/newShopcake/#!/#%2F!
 
 Thank you for spending your time to look at our work.
