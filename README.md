@@ -20,11 +20,6 @@ Student1459122
 Đặng Quang Khánh
 Student1441452
 
-Nguyen Van Phung
-Student
-
-> > > > > > > e3698b14c7b501b9146fc5c187c52748d9d61b7d
-
 ============================
 
 eProject documentation at https://github.com/Jonylucky/project-cakeShop/tree/Thien
