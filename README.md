@@ -11,7 +11,7 @@ Ta Hai Luong Student1459114
 Nguyen Khanh Danh Student1459128
 Nguyễn Tất Thiên Student1459122
 Đặng Quang Khánh Student1441452
-Nguyen Van Phung Student
+
 ============================
 
 eProject documentation at https://github.com/Jonylucky/project-cakeShop/tree/Thien
