@@ -22,7 +22,7 @@ Student1441452
 
 ============================
 
-eProject documentation at https://github.com/Jonylucky/project-cakeShop/tree/Thien
+eProject documentation at https://github.com/Jonylucky/newShopcake/tree/main/document
 
 ============================
 
