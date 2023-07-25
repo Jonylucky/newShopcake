@@ -98,7 +98,7 @@
             <div class="shop-card wd-76 s-full-width">
                 <div class="container-product">
                     <div class="product-content" ng-model="filter">
-                        <div class=" wd-thir col-thir s-col-full pd-8" ng-repeat=" item in dataProduct|myFilter:prop|rangePrice:
+                        <div class=" wd-thir col-thir s-col-full pd-8" ng-repeat=" item in dataProduct|filter:{'name':name}|myFilter:prop|rangePrice:
                             {'toPrice':to_price,'fromPrice':from_price}| limitTo :pageSize:begin">
 
                             <div class="box-product">
