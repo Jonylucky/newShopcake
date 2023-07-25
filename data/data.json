@@ -2,7 +2,7 @@
   "details": [
     {
       "id": "1",
-      "name": "Ormari sed consequat",
+      "name": "Friand",
       "type": "birthday",
       "egg": "no",
       "price": "19",
@@ -18,7 +18,7 @@
     },
     {
       "id": "2",
-      "name": "Ormari sed consequat",
+      "name": "Cassata",
       "type": "birthday",
       "egg": "no",
       "price": "19",
@@ -34,7 +34,8 @@
     },
     {
       "id": "3",
-      "name": "Ormari sed consequat",
+      "name": "Pavlova",
+    
       "type": "birthday",
       "egg": "no",
       "price": "19",
@@ -50,7 +51,7 @@
     },
     {
       "id": "4",
-      "name": "Ormari sed consequat",
+      "name": "Kasutera",
       "type": "birthday",
       "egg": "no",
       "price": "19",
@@ -66,7 +67,7 @@
     },
     {
       "id": "5",
-      "name": "Ormari sed consequat",
+      "name": "Cremeschnitte",
       "type": "birthday",
       "egg": "with",
       "price": "100",
@@ -82,7 +83,7 @@
     },
     {
       "id": "6",
-      "name": "Ormari sed consequat",
+      "name": "Sacher-Torte",
       "type": "birthday",
       "egg": "with",
       "price": "50",
@@ -98,7 +99,7 @@
     },
     {
       "id": "34",
-      "name": "Ormari sed consequat",
+      "name": "Schwarzwälder Kirschtorte",
       "type": "birthday",
       "egg": "with",
       "price": "50",
@@ -114,7 +115,7 @@
     },
     {
       "id": "35",
-      "name": "Ormari sed consequat",
+      "name": "Pound Cake",
       "type": "birthday",
       "egg": "with",
       "price": "50",
@@ -130,7 +131,7 @@
     },
     {
       "id": "36",
-      "name": "Ormari sed consequat",
+      "name": "Cheesecake",
       "type": "birthday",
       "egg": "with",
       "price": "50",
@@ -146,7 +147,7 @@
     },
     {
       "id": "37",
-      "name": "Ormari sed consequat",
+      "name": "Sernik",
       "type": "birthday",
       "egg": "no",
       "price": "50",
@@ -162,7 +163,7 @@
     },
     {
       "id": "7",
-      "name": "Ormari sed consequat",
+      "name": "Medovik",
       "type": "birthday",
       "egg": "with",
       "price": "19",
@@ -178,7 +179,7 @@
     },
     {
       "id": "8",
-      "name": "Ormari sed consequat",
+      "name": "Krémes",
       "type": "birthday",
       "egg": "with",
       "price": "19",
@@ -195,7 +196,7 @@
 
     {
       "id": "9",
-      "name": "Ormari sed consequat",
+      "name": "Bolo de brigadeiro",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -211,7 +212,7 @@
     },
     {
       "id": "10",
-      "name": "Ormari sed consequat",
+      "name": "Red Velvet Cake",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -227,7 +228,7 @@
     },
     {
       "id": "11",
-      "name": "Ormari sed consequat",
+      "name": "Käsekuchen",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -243,7 +244,7 @@
     },
     {
       "id": "12",
-      "name": "Ormari sed consequat",
+      "name": "Ciambella",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -259,7 +260,7 @@
     },
     {
       "id": "13",
-      "name": "Ormari sed consequat",
+      "name": "Kladdkaka",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -275,7 +276,7 @@
     },
     {
       "id": "14",
-      "name": "Ormari sed consequat",
+      "name": "Piernik",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -291,7 +292,7 @@
     },
     {
       "id": "15",
-      "name": "Ormari sed consequat",
+      "name": "Lamington",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -307,7 +308,7 @@
     },
     {
       "id": "16",
-      "name": "Ormari sed consequat",
+      "name": "Apfelkuchen",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -323,7 +324,7 @@
     },
     {
       "id": "16",
-      "name": "Ormari sed consequat",
+      "name": "Mazurek",
       "type": "Marriage",
       "egg": "with",
       "price": "19",
@@ -340,7 +341,7 @@
 
     {
       "id": "17",
-      "name": "Anniversary-cake",
+      "name": "Boston Cream Pie",
       "type": "Anniversary",
       "egg": "with",
       "price": "19",
@@ -356,7 +357,7 @@
     },
     {
       "id": "18",
-      "name": "Anniversary-cake",
+      "name": "Bûche de Noël",
       "type": "Anniversary",
       "egg": "with",
       "price": "19",
@@ -372,7 +373,7 @@
     },
     {
       "id": "19",
-      "name": "Anniversary-cake",
+      "name": "Linzer Torte",
       "type": "Anniversary",
       "egg": "with",
       "price": "19",
@@ -388,7 +389,7 @@
     },
     {
       "id": "20",
-      "name": "Anniversary-cake",
+      "name": "Victoria Sponge",
       "type": "Anniversary",
       "egg": "with",
       "price": "19",
@@ -404,7 +405,7 @@
     },
     {
       "id": "21",
-      "name": "Anniversary-cake",
+      "name": "Bublanina",
       "type": "Anniversary",
       "egg": "with",
       "price": "19",
@@ -420,7 +421,7 @@
     },
     {
       "id": "22",
-      "name": "Anniversary-cake",
+      "name": "Charlotte Russe",
       "type": "Anniversary",
       "egg": "with",
       "price": "19",
@@ -436,7 +437,7 @@
     },
     {
       "id": "23",
-      "name": "Anniversary-cake",
+      "name": "Ptichye moloko",
       "type": "Anniversary",
       "egg": "with",
       "price": "19",
@@ -452,7 +453,7 @@
     },
     {
       "id": "24",
-      "name": "Anniversary-cake",
+      "name": "Dacquoise",
       "type": "Anniversary",
       "egg": "with",
       "price": "25",
@@ -469,7 +470,7 @@
 
     {
       "id": "25",
-      "name": "Ormari sed consequat",
+      "name": "Bienenstich",
       "type": "gallsery",
       "egg": "with",
       "price": "19",
@@ -485,7 +486,7 @@
     },
     {
       "id": "26",
-      "name": "Ormari sed consequat",
+      "name": "Kouign-amann",
       "type": "gallsery",
       "egg": "with",
       "price": "19",
@@ -501,7 +502,7 @@
     },
     {
       "id": "27",
-      "name": "Ormari sed consequat",
+      "name": "Donauwelle",
       "type": "gallsery",
       "egg": "with",
       "price": "19",
@@ -517,7 +518,7 @@
     },
     {
       "id": "28",
-      "name": "Ormari sed consequat",
+      "name": "Bibingka",
       "type": "gallsery",
       "egg": "with",
       "price": "19",
@@ -533,7 +534,7 @@
     },
     {
       "id": "29",
-      "name": "Ormari sed consequat",
+      "name": "Donauwelle",
       "type": "gallsery",
       "egg": "with",
       "price": "19",
@@ -549,7 +550,7 @@
     },
     {
       "id": "30",
-      "name": "Ormari sed consequat",
+      "name": "Financier",
       "type": "gallsery",
       "egg": "with",
       "price": "19",
@@ -566,7 +567,7 @@
 
     {
       "id": "31",
-      "name": "cake-sale",
+      "name": "Gooey Butter Cake",
       "type": "sale",
       "egg": "with",
       "price": "19",
@@ -582,7 +583,7 @@
     },
     {
       "id": "32",
-      "name": "Ormari sed consequat",
+      "name": "Tompouce",
       "type": "sale",
       "egg": "with",
       "price": "19",
@@ -598,7 +599,7 @@
     },
     {
       "id": "33",
-      "name": "Ormari sed consequat",
+      "name": "Battenberg Cake",
       "type": "sale",
       "egg": "with",
       "price": "19",
@@ -614,7 +615,7 @@
     },
     {
       "id": "34",
-      "name": "Ormari sed consequat",
+      "name": "Torta Garash",
       "type": "sale",
       "egg": "with",
       "price": "19",
@@ -630,7 +631,7 @@
     },
     {
       "id": "35",
-      "name": "Ormari sed consequat",
+      "name": "Gooey Butter Cake",
       "type": "sale",
       "egg": "with",
       "price": "19",
@@ -646,7 +647,7 @@
     },
     {
       "id": "36",
-      "name": "Ormari sed consequat",
+      "name": "pancake",
       "type": "sale",
       "egg": "with",
       "price": "19",
