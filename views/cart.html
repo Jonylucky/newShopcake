@@ -36,7 +36,8 @@
             <div class="wd-haft s-full-width">
                 <div class="total-product">
                     <ul class="total-product__list">
-                        <li class="total-product__head"><a href="" class="btn-continue btn">Continue
+                        <li class="total-product__head"><a href="" class="btn-continue btn " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Continue
                                 to checkout</a>
 
                             <div class="head__total">For the best shopping experience, <a href="#!login"> Log in</a>
@@ -58,5 +59,63 @@
             </div>
         </div>
 
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">List price product</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <ul class="total-product__list">
+                            <li class="total-product__item"><span class="suptotal-modal">Name Product :
+                                    {{nameProduct()}} </span>
+                            </li>
+                            <li class="total-product__item"><span class="suptotal-modal">Quantily :
+                                    {{quantily()}} </span>
+                            </li>
+                            <li class="total-product__item"><span class="suptotal-modal">Suptotal :
+                                    {{totalOrder()}}$</span>
+                            </li>
+                            <li class="total-product__item"><span>Shipping</span><span>Free</span></li>
+
+                            <li class="total-product__item"><span>Select delivery or pickup to view fees</span>
+                                <a>Select</a>
+                            </li>
+                            <li class="total-product__item"><span>Taxes</span><span>Calculated at checkout</span></li>
+
+                        </ul>
+                        <form id="modal-from">
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">PassWork:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Number Phone:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Shipping Address:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" ng-click="resetList()">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

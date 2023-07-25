@@ -53,6 +53,10 @@ nav {
   font-size: 3rem;
   
 }
+.btn-home {
+
+  display: none;
+}
 /* carousel */
 .slide .img {
  

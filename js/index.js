@@ -92,7 +92,10 @@ myApp.factory("myService", function () {
     return listCart;
   }
   // get quantyitem product
-
+  // reset list cart
+  function resetListCart() {
+    listCart.splice(0, listCart.length);
+  }
   // delete product item cart
   function deleteItemListCart(item) {
     listCart.forEach((element, index) => {
@@ -138,6 +141,7 @@ myApp.factory("myService", function () {
     setListCart: setListCart,
     getListCart: getListCart,
     deleteItemListCart: deleteItemListCart,
+    resetListCart: resetListCart,
     // get quantily item product
 
     // login/logout user
@@ -305,6 +309,7 @@ myApp.controller("shopCtrl", function ($scope, $routeParams, myService, $http) {
   $scope.setItemListCart = function (item) {
     myService.setListCart(item);
   };
+  // modal
 });
 
 // contact controller
@@ -387,11 +392,50 @@ myApp.controller("cartCtrl", function ($scope, myService) {
     });
     return total;
   };
+  // quantily order
+  $scope.quantily = function () {
+    var quantily = 0;
+    list.forEach((element, index) => {
+      quantily += element.amount;
+    });
+    return quantily;
+  };
+  //  order name producct
+  $scope.nameProduct = function () {
+    var listname = [];
+    list.forEach((element, index) => {
+      listname.push(element.name);
+    });
+    return listname.toString();
+  };
   // remover item cart
   $scope.removeItem = function (item) {
     myService.deleteItemListCart(item);
   };
+  //
   $scope.listCart = list;
+
+  // reset list car and from
+  $scope.resetList = function () {
+    myService.resetListCart();
+    $("#modal-from").trigger("reset");
+  };
+
+  const exampleModal = document.getElementById("exampleModal");
+  if (exampleModal) {
+    exampleModal.addEventListener("show.bs.modal", (event) => {
+      // Button that triggered the modal
+      const button = event.relatedTarget;
+      // Extract info from data-bs-* attributes
+      const recipient = button.getAttribute("data-bs-whatever");
+      // If necessary, you could initiate an Ajax request here
+      // and then do the updating in a callback.
+
+      // Update the modal's content.
+      const modalTitle = exampleModal.querySelector(".modal-title");
+      const modalBodyInput = exampleModal.querySelector(".modal-body input");
+    });
+  }
 });
 
 /**
