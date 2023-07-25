@@ -380,10 +380,13 @@ myApp.controller("blogCtrl", function ($scope, $http) {
 
 myApp.controller("cartCtrl", function ($scope, myService) {
   // get list cart
-  let list = [];
+  let list = "";
   list = myService.getListCart();
   console.log(list);
 
+  list == ""
+    ? (($scope.checkout = false), ($scope.checkList = true))
+    : (($scope.checkout = true), ($scope.checkList = false));
   // total order
   $scope.totalOrder = function () {
     var total = 0;
@@ -419,6 +422,8 @@ myApp.controller("cartCtrl", function ($scope, myService) {
   $scope.resetList = function () {
     myService.resetListCart();
     $("#modal-from").trigger("reset");
+    $scope.checkout = false;
+    $scope.checkList = true;
   };
 
   const exampleModal = document.getElementById("exampleModal");

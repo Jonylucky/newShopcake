@@ -1162,6 +1162,18 @@ padding-top: 8px;
   padding: 26px;
 
 }
+.cart-no-product{
+text-align: center;
+color: var(--text-color);
+
+}
+.cart-no-product p{
+  font-size: 3rem;
+}
+.icon-not-product{
+  color: var(--text-color);
+  font-size: 20rem;
+}
 
  .cart-item_link{
   color: #f38a8a;

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="cart-detail">
 
-            <div class="wd-haft s-full-width">
+            <div class="wd-haft s-full-width" ng-show="checkout">
                 <div class="cart-card">
                     <ul class="cart-list_head">
                         <li class="cart-item__product pd-left"> Product</li>
@@ -31,6 +31,13 @@
 
                 </div>
 
+            </div>
+            <div class="wd-haft s-full-width" ng-show="checkList">
+                <div class="cart-no-product">
+                    <p>Not Product</p>
+                    <div class="icon-not-product"> <i class="fa-solid fa-ban"></i></div>
+                    <a href="#!shop/shop" class="btn">Tobe Continue Shop</a>
+                </div>
             </div>
 
             <div class="wd-haft s-full-width">
@@ -109,7 +116,8 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" ng-click="resetList()">Send message</button>
+                        <button type="button" class="btn btn-primary" class="btn btn-secondary" data-bs-dismiss="modal"
+                            ng-click="resetList()">Send message</button>
                     </div>
                 </div>
             </div>
