@@ -168,7 +168,7 @@
     <div class="container-product pd-16">
         <div class="product-content">
             <div class=" wd-for col-thir s-col-full pd-8"
-                ng-repeat=" item in dataProduct | filter:{'type':'Anniversary'} ">
+                ng-repeat=" item in dataProduct | filter:{'type':'Anniversary'}|limitTo:8 ">
 
                 <div class=" box-product">
 
