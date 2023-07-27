@@ -500,3 +500,16 @@ myApp.controller("blogDetailCtrl", function ($scope, $routeParams, $http) {
     console.log($scope.itemBlog);
   });
 });
+//scroll to top
+const button = document.querySelector("button");
+const div = document.querySelector("div");
+button.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+button.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: `smooth`,
+  });
+});
