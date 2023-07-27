@@ -501,13 +501,22 @@ myApp.controller("blogDetailCtrl", function ($scope, $routeParams, $http) {
   });
 });
 //scroll to top
-const button = document.querySelector("button");
+const button = document.querySelector("a");
+const btn = document.querySelector("button");
 const div = document.querySelector("div");
 button.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
-
+btn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
 button.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: `smooth`,
+  });
+});
+btn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: `smooth`,
