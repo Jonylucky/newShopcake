@@ -1104,6 +1104,7 @@ font-size: 1.4rem;
 }
 .cart-item__product img{
 width:40%;
+height: 76px;
 object-position: 15% 100%;
 object-fit: cover;
 
