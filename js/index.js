@@ -391,7 +391,11 @@ myApp.controller("cartCtrl", function ($scope, myService) {
   $scope.totalOrder = function () {
     var total = 0;
     list.forEach((element) => {
-      total += element.price * element.amount;
+      if (element.amount > 0) {
+        total += element.price * element.amount;
+      } else {
+        total = 0;
+      }
     });
     return total;
   };
@@ -399,7 +403,11 @@ myApp.controller("cartCtrl", function ($scope, myService) {
   $scope.quantily = function () {
     var quantily = 0;
     list.forEach((element, index) => {
-      quantily += element.amount;
+      if (element.amount > 0) {
+        quantily += element.amount;
+      } else {
+        quantily = 0;
+      }
     });
     return quantily;
   };
