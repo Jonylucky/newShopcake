@@ -391,11 +391,7 @@ myApp.controller("cartCtrl", function ($scope, myService) {
   $scope.totalOrder = function () {
     var total = 0;
     list.forEach((element) => {
-      if (element.amount > 0) {
-        total += element.price * element.amount;
-      } else {
-        total = 0;
-      }
+      total += element.price * element.amount;
     });
     return total;
   };
